@@ -1,5 +1,6 @@
 # Qiskit-Metal-to-Litho
-On the use of Qiskit Metal in Python to generate design files for building quantum devices on a chip, performed by direct-write lithography.
+On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip, performed by direct-write lithography.
+_________________________________________________________________________________________________________________________________________________
 
 ![unnamed](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/136c6ce6-568a-4477-ad70-89df4ee516ab)
 
