@@ -12,7 +12,7 @@ PIP will handle most of the dependencies automatically and you will always insta
   
 _________________________________________________________________________________________________________________________________________________
 
-![20230616_081944](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/27c534ae-2e78-4c18-88c2-605dc74cd271)
+![20230616_081944](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/7c20c740-19f3-4a0e-b471-a6ab591f89c0)
 
 ![20230616_065853](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/94780286-cbc5-4bde-a28b-5921ea23009a)
 
