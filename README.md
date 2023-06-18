@@ -2,6 +2,10 @@
 On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip, performed by direct-write lithography.
 _________________________________________________________________________________________________________________________________________________
 
+Required software:
+### Install Qiskit-Metal
+  pip install qiskit-metal
+  
 
 ![20230616_081944](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/27c534ae-2e78-4c18-88c2-605dc74cd271)
 
