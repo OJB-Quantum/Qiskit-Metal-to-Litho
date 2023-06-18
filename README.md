@@ -3,8 +3,12 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 _________________________________________________________________________________________________________________________________________________
 
 Required software:
-### Install Qiskit-Metal
-  pip install qiskit-metal
+### Instal Qiskit Metal
+You can install Qiskit Metal via the pip tool (a python package manager).
+```bash
+pip install qiskit-metal
+```
+PIP will handle most of the dependencies automatically and you will always install the latest (and well-tested) version of the package.
   
 _________________________________________________________________________________________________________________________________________________
 
