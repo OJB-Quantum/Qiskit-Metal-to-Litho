@@ -4,11 +4,10 @@ ________________________________________________________________________________
 
 Required software:
 ### Install Qiskit Metal
-You can install Qiskit Metal via the pip tool (a python package manager).
+You can install Qiskit Metal via the pip install tool.
 ```bash
 pip install qiskit-metal
 ```
-PIP will handle most of the dependencies automatically and you will always install the latest (and well-tested) version of the package.
   
 _________________________________________________________________________________________________________________________________________________
 
