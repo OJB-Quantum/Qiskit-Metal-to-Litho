@@ -16,7 +16,7 @@ ________________________________________________________________________________
 - LibreCAD (open-sourced and feature-packed: https://librecad.org)
 
 ### Pattern layout viewers & editors:
-- LinkCAD (paid version: https://www.linkcad.com/download.php)
+- LinkCAD (paid version: https://www.linkcad.com/download.php [usually purchased by your lab])
 - KLayout (open-sourced & feature-packed: https://www.klayout.de/build.html)
 - Raith_GDSII MATLAB Toolbox (public licensed: https://github.com/ahryciw/Raith_GDSII)
 - Octave/ MATLAB Toolbox for GDSII (public domain: https://github.com/ulfgri/gdsii-toolbox)
