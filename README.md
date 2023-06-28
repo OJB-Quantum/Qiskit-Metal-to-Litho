@@ -25,13 +25,25 @@ ________________________________________________________________________________
 - BEAMER (from GenIsys: https://www.genisys-gmbh.com/beamer.html [usually purchased by your lab])
 
 _________________________________________________________________________________________________________________________________________________
-Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
+### Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
 - https://github.com/qiskit-community/qiskit-metal/tree/main
 _________________________________________________________________________________________________________________________________________________
 ### Slides and webinars for using electron-beam lithography software:
 - https://www.genisys-gmbh.com/webinar-series-beamer-training.html
-### 
 
+### General overview of electron-beam lithography:
+- https://nano.yale.edu/book/export/html/213
+- https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography
+
+### Examples of green lithography-based direct-write patterning:
+
+- https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223
+- https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533
+
+### A standard negative resist material:
+-https://www.microresist.de/en/produkt/ma-n-2400-series
+
+_________________________________________________________________________________________________________________________________________________
 
 ![20230616_081944](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/7c20c740-19f3-4a0e-b471-a6ab591f89c0)
 
