@@ -1,7 +1,7 @@
 # Qiskit-Metal-to-Litho
 On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip, performed via direct-write lithography. Depending on the resolution of desired quantum device features, LASER, scanning thermal probe, and electron-beam techniques are applicable options for patterning your design.
 
-(Note: in the patterned 400-transmon example below, the ground contacts were excluded from layout as the design was to demonstrate process feasibility from Qiskit Metal design-to-real-chip. However, the main features are clearly visible under optical microscopy. Also, a DXF design output for a full quantum chip design [electrodes, ground, and all] is available for download in the file directories above).
+(Note: in the patterned 400-transmon example below, the ground contacts were excluded from layout as the design was to demonstrate process feasibility from Qiskit Metal design-to-real-chip. However, the main features are clearly visible under optical microscopy. Also, I included a DXF/GDS design output for a full quantum chip ready for fabrication [electrodes, ground, and all], available to download in the file directories above).
 
 ## It is important to know that there are 2 main types of patterning with the e-beam writer (EBPG) equipment: 
 - (Marker-based using "rp" commands) - this is used if your sample has pre-existing markers patterned on it already [ex. sample WITH purposely-designed reference points that can be automatically located by the EBPG's built-in SEM tool].
