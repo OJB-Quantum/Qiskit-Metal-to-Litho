@@ -50,7 +50,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 _________________________________________________________________________________________________________________________________________________
 ### Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
 - https://github.com/qiskit-community/qiskit-metal/tree/main
-
+_________________________________________________________________________________________________________________________________________________
 ### To create the chip below, follow the design process flow from the folder called "Python Code_Qiskit Metal_Designs" in this repository.
 _________________________________________________________________________________________________________________________________________________
 
