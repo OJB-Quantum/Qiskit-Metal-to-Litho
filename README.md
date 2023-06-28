@@ -6,7 +6,7 @@ ________________________________________________________________________________
 - Qiskit Metal
 - 2D CAD program
 - Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter)
-- GDS-to-GPF converter
+- Electron- and LASER-beam lithography software (GDS-to-GPF converter for equipment)
 
 ## Installation steps for Qiskit Metal can be found in the "requirements_plus" folder stored on this repository.
 
@@ -18,10 +18,14 @@ ________________________________________________________________________________
 ### Pattern layout viewers & editors:
 - LinkCAD (paid version: https://www.linkcad.com/download.php)
 - KLayout (open-sourced & feature-packed: https://www.klayout.de/build.html)
-- Raith_GDSII MATLAB Toolbox (open-sourced: https://github.com/ahryciw/Raith_GDSII)
+- Raith_GDSII MATLAB Toolbox (public licensed: https://github.com/ahryciw/Raith_GDSII)
 - Octave/ MATLAB Toolbox for GDSII (public domain: https://github.com/ulfgri/gdsii-toolbox)
 
-Some of the code used here are inspired from the Qiskit Metal page: 
+### Electron- and LASER-beam lithography software:
+- BEAMER (from GenIsys: [usually comes with your lithography equipment])
+
+_________________________________________________________________________________________________________________________________________________
+Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
 https://github.com/qiskit-community/qiskit-metal/tree/main 
 _________________________________________________________________________________________________________________________________________________
 
