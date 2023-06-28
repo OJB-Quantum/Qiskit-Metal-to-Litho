@@ -33,9 +33,6 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 ### Electron- and LASER-beam lithography software:
 - BEAMER (from GenIsys: https://www.genisys-gmbh.com/beamer.html [usually purchased by your lab])
 
-### Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
-- https://github.com/qiskit-community/qiskit-metal/tree/main
-
 ### Slides and webinars for using electron-beam lithography software:
 - https://www.genisys-gmbh.com/webinar-series-beamer-training.html
 
@@ -49,6 +46,10 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 
 ### A standard negative resist material:
 - https://www.microresist.de/en/produkt/ma-n-2400-series
+- 
+_________________________________________________________________________________________________________________________________________________
+### Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
+- https://github.com/qiskit-community/qiskit-metal/tree/main
 
 _________________________________________________________________________________________________________________________________________________
 
