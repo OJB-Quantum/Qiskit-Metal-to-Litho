@@ -26,13 +26,17 @@ ________________________________________________________________________________
 
 _________________________________________________________________________________________________________________________________________________
 Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
+```
 https://github.com/qiskit-community/qiskit-metal/tree/main 
+```
 _________________________________________________________________________________________________________________________________________________
 ### Slides and webinars for using electron-beam lithography software:
-- https://www.genisys-gmbh.com/webinar-series-beamer-training.html
-
+```
+https://www.genisys-gmbh.com/webinar-series-beamer-training.html
+```
 ### 
-
+```
+```
 
 ![20230616_081944](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/7c20c740-19f3-4a0e-b471-a6ab591f89c0)
 
