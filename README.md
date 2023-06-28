@@ -4,7 +4,7 @@ ________________________________________________________________________________
 ## It is important to know that there are 2 main types of patterning with the e-beam writer (EBPG) equipment: 
 - (Marker-based using "rp" commands) - this is used if your sample has pre-existing markers patterned on it already [ex. sample WITH purposely-designed reference points that can be automatically located by the EBPG's built-in SEM tool].
 - (Marker-free-based using "joyplus" commands) - this is used if your sample has no pre-existing referencing patterns [ex. bare substrate or other sample WITHOUT purposely-designed reference points].
-  
+
 ________________________________________________________________________________________________________________________________________________
 ## Terms to be aware of:
 - BEAMER - Desktop software for importing GDSII or GDS files stored on WinSCP, beam step, size, and error correction (heal) paramters are set here and subsequently exported as GPF files that can be read by the EBPG equipment. Additionally the parameters can be downloaded as a Python script (.py). An example of a Python script used in BEAMER is available for reference in the file directory above.
@@ -36,7 +36,7 @@ ________________________________________________________________________________
 _________________________________________________________________________________________________________________________________________________
 ### Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
 - https://github.com/qiskit-community/qiskit-metal/tree/main
-_________________________________________________________________________________________________________________________________________________
+
 ### Slides and webinars for using electron-beam lithography software:
 - https://www.genisys-gmbh.com/webinar-series-beamer-training.html
 
