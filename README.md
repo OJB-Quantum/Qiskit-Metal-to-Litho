@@ -45,12 +45,11 @@ ________________________________________________________________________________
 - https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography
 
 ### Examples of green lithography-based direct-write patterning:
-
 - https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223
 - https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533
 
 ### A standard negative resist material:
--https://www.microresist.de/en/produkt/ma-n-2400-series
+- https://www.microresist.de/en/produkt/ma-n-2400-series
 
 _________________________________________________________________________________________________________________________________________________
 
