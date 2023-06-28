@@ -22,7 +22,7 @@ ________________________________________________________________________________
 - Octave/ MATLAB Toolbox for GDSII (public domain: https://github.com/ulfgri/gdsii-toolbox)
 
 ### Electron- and LASER-beam lithography software:
-- BEAMER (from GenIsys: [usually comes with your lithography equipment])
+- BEAMER (from GenIsys: https://www.genisys-gmbh.com/beamer.html [usually purchased by your lab])
 
 _________________________________________________________________________________________________________________________________________________
 Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
