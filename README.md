@@ -7,8 +7,6 @@ It is important to know that there are 2 main types of patterning with the e-bea
   
 ________________________________________________________________________________________________________________________________________________
 Terms to be aware of:
-- WinSCP - Desktop software for storing pattern design files on server (GDS, GPF, DXF).
-- XWin Server - Desktop software for accessing a terminal to load BEAMER using unique login and password info provided by e-beam trainer. The button for XWin Server is typically located on the taskbar on the bottom right of your desktop machine (for Windows PC).
 - BEAMER - Desktop software for importing GDSII or GDS files stored on WinSCP, beam step, size, and error correction (heal) paramters are set here and subsequently exported as GPF files that can be read by the EBPG equipment. Additionally the parameters can be downloaded as a Python script (.py). An example of a Python script used in BEAMER is available for reference in the file directory above.
 - CJOB - Software tool that is accessed on the EBPG equipment itself using the EBPG's terminal. From here, the GPF files can be uploaded and programmed with virtual alignment marker locations based on the uploaded design. Once the file is ready, it will export as a JOB file (.job). The JOB file name is what gets copied into the EBPG's terminal along with 4 coordinates validated by the built-in SEM.
 
