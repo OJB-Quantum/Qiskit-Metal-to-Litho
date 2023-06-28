@@ -1,7 +1,7 @@
 # Qiskit-Metal-to-Litho
 On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip, performed via direct-write lithography. Depending on the resolution of features, LASER, scanning thermal probe, and electron-beam techniques are applicable options. 
 _________________________________________________________________________________________________________________________________________________
-It is important to know that there are 2 main types of patterning with the e-beam writer (EBPG) equipment: 
+## It is important to know that there are 2 main types of patterning with the e-beam writer (EBPG) equipment: 
 - (Marker-based using "rp" commands) - this is used if your sample has pre-existing markers patterned on it already [ex. sample WITH purposely-designed reference points that can be automatically located by the EBPG's built-in SEM tool].
 - (Marker-free-based using "joyplus" commands) - this is used if your sample has no pre-existing referencing patterns [ex. bare substrate or other sample WITHOUT purposely-designed reference points].
   
