@@ -8,7 +8,7 @@ ________________________________________________________________________________
 - Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter)
 - GDS-to-GPF converter
 
-### Installation steps for Qiskit Metal can be found in the "requirements_plus" folder stored on this repository.
+## Installation steps for Qiskit Metal can be found in the "requirements_plus" folder stored on this repository.
 
 ### 2D CAD programs available:
 - AutoCAD or AutoCAD Web (cost effective alternative to locally-installed AutoCAD: https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP)
