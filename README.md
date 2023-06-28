@@ -1,10 +1,25 @@
 # Qiskit-Metal-to-Litho
-On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip, performed via direct-write lithography. Depending on the resolution of features, LASER, scanning thermal probe, and electron-beam techniques are applicable options.
+On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip, performed via direct-write lithography. Depending on the resolution of features, LASER, scanning thermal probe, and electron-beam techniques are applicable options. 
 _________________________________________________________________________________________________________________________________________________
 
-## Required software:
-### Installation steps for Qiskit Metal can be found in the "requirements" folder stored on this repository.
+## Required software (some open-source free versions will be linked below):
+- Qiskit Metal
+- 2D CAD program
+- Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter)
+- GDS-to-GPF converter
 
+### Installation steps for Qiskit Metal can be found in the "requirements_plus" folder stored on this repository.
+
+### 2D CAD programs available:
+- AutoCAD or AutoCAD Web (cost effective alternative to locally-installed AutoCAD: https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP)
+- QCAD (open-sourced and simple: https://qcad.org/en)
+- LibreCAD (open-sourced and feature-packed: https://librecad.org)
+
+### Pattern layout viewers & editors:
+- LinkCAD (paid version: https://www.linkcad.com/download.php)
+- KLayout (open-sourced & feature-packed: https://www.klayout.de/build.html)
+- Raith_GDSII MATLAB Toolbox (open-sourced: https://github.com/ahryciw/Raith_GDSII)
+- Octave/ MATLAB Toolbox for GDSII (public domain: https://github.com/ulfgri/gdsii-toolbox)
 
 Some of the code used here are inspired from the Qiskit Metal page: 
 https://github.com/qiskit-community/qiskit-metal/tree/main 
