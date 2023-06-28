@@ -1,3 +1,16 @@
+# The sequence of steps found below should be followed in relatively chronological order and can be used as a chronological checklist for installing Qiskit Metal.
+
+# Install Jupyter.
+# Install Anaconda.
+# Open Command Prompt >> type (git --version) to be sure git is there >> type (conda --version) to be sure a conda variation is there.
+# Install Visual Studio Installer >> install Visual Studio Community (Check the boxes on the right-side panel & be sure to select Windows 10 or 11 SDK). [pip install gdspy won't be able to build wheels without an updated Visual Studio or Visual Studio Build Tools].
+# Open Anaconda Prompt as admin.
+# Type (conda activate <name of custom quantum environment>).
+# Install Qiskit Metal by typing (pip install qiskit-metal or pip install qiskit_metal).
+# To add darkmode to Qiskit Metal, type (pip install qdarkstyle).
+# To update Qiskit Metal, type (pip install --upgrade qiskit_metal).
+# If the install is bringing up an error, be sure to restart entire system.
+
 addict==2.4.0
 descartes==1.1.0
 gdspy==1.6.12
@@ -18,4 +31,4 @@ scqubits==3.1.0
 gmsh==4.11.1
 pyaedt==0.6.46
 pyyaml==6.0
-# jupyter (if you need a fresh install) or ipykernel (if you prefer to make of this a new kernel to use from an existing jupyter install)
+
