@@ -1,7 +1,18 @@
 # Qiskit-Metal-to-Litho
 On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip, performed via direct-write lithography. Depending on the resolution of features, LASER, scanning thermal probe, and electron-beam techniques are applicable options. 
 _________________________________________________________________________________________________________________________________________________
+It is important to know that there are 2 main types of patterning with the e-beam writer (EBPG) equipment: 
+- (Marker-based using "rp" commands) - this is used if your sample has pre-existing markers patterned on it already [ex. sample WITH purposely-designed reference points that can be automatically located by the EBPG's built-in SEM tool].
+- (Marker-free-based using "joyplus" commands) - this is used if your sample has no pre-existing referencing patterns [ex. bare substrate or other sample WITHOUT purposely-designed reference points].
+  
+________________________________________________________________________________________________________________________________________________
+Terms to be aware of:
+- WinSCP - Desktop software for storing pattern design files on server (GDS, GPF, DXF).
+- XWin Server - Desktop software for accessing a terminal to load BEAMER using unique login and password info provided by e-beam trainer. The button for XWin Server is typically located on the taskbar on the bottom right of your desktop machine (for Windows PC).
+- BEAMER - Desktop software for importing GDSII or GDS files stored on WinSCP, beam step, size, and error correction (heal) paramters are set here and subsequently exported as GPF files that can be read by the EBPG equipment. Additionally the parameters can be downloaded as a Python script (.py). An example of a Python script used in BEAMER is available for reference in the file directory above.
+- CJOB - Software tool that is accessed on the EBPG equipment itself using the EBPG's terminal. From here, the GPF files can be uploaded and programmed with virtual alignment marker locations based on the uploaded design. Once the file is ready, it will export as a JOB file (.job). The JOB file name is what gets copied into the EBPG's terminal along with 4 coordinates validated by the built-in SEM.
 
+________________________________________________________________________________________________________________________________________________
 ## Required software (some open-source free versions will be linked below):
 - Qiskit Metal
 - 2D CAD program
