@@ -7,7 +7,7 @@
 # Open Anaconda Prompt as admin.
 # Type (conda env create -n <name of custom quantum environment> .\environment.yml). [If there is an error, likely it is because there is no yml file type located there. The yml file type is needed for this to work].
 # Open a new Command Prompt window [run as administrator] >> type (conda update -n base -c defaults conda) >> press Enter >> when prompted to proceed with update, type (y) >> press Enter >> close command window.
-# Activate the conda environment: type (conda activate <name of custom quantum environment>) or if that doesn't work, type (CALL conda.bat activate <name of custom quantum environment>) >> press Enter. (<name of custom quantum environment>) should show as a result.
+# Activate the quantum environment: type (conda activate <name of custom quantum environment>) or if that doesn't work, type (CALL conda.bat activate <name of custom quantum environment>) >> press Enter. (<name of custom quantum environment>) should show as a result.
 # Install Qiskit Metal by typing (pip install qiskit-metal or pip install qiskit_metal).
 # To add darkmode to Qiskit Metal, type (pip install qdarkstyle).
 # To update Qiskit Metal, type (pip install --upgrade qiskit_metal).
