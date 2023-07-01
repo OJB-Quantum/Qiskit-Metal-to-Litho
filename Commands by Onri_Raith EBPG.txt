@@ -1,0 +1,73 @@
+# Follow these commands in relatively chronological order from top-to-bottom...
+# (Anything after a hash symbol are optional codes or important comments).
+
+ce <username>
+cd jobs
+cjob
+subl 1 # command for loading sample holder after pumping down.
+pg select holder 3 # command for selecting sample holder label.
+mvm
+# atc
+beamload 1na_300um_table.beam_100  or  beamload 0na5_300um_table.beam_100 # for setting SEM beam current (0.5, 1, 5 nanoamps). 
+beamload 5na_300um_table.beam_100 # other optional command for SEM beam current.
+
+pg measure current  or  mea_c # for locating Faraday cup (main reference point).
+
+# pg move position 0,-500 --rel
+
+# export PG_MAXROTANGLE=1.039640 
+# export PG_MAXROTANGLE=0.498428
+_________________________________________________________________________________________________________
+(options: shape - rectangle or cross [rect or cross], positive or negative tone [pos or neg], position in microns - width and height, & joy marker type)
+_________________________________________________________________________________________________________
+# 1st command is to locate Faraday cup, followed by real or virtual marker position in (real, measured) microns. The semicolon combines both commands. 
+# You can also use: pg move position 74101.000,55695.000 or specific coordinate on SEM to move to exact location during troubleshooting.   #82217.300,121140.300 85775.800,121138.900 82215.605,117030.505 85774.395,117029.875
+# Replace coordinates below with coordinates that have been recorded during the sample holder calibration & adjustment.
+
+
+mea_c;pg move position 66574,-31288 --rel           # (...1, from C-pattern)
+# findmark rp20  # >>>> (type after each marker, then press Enter). # This is used if your sample has pre-existing markers. For bare samples without pre-existing markers, see the next comment.
+# record real coordinates from SEM window...
+
+
+mea_c;pg move position 84601,-31288 --rel           # (...4, from C-pattern)
+# findmark rp20  # >>>> (type after each joymark, then press Enter). # This is used if your sample has pre-existing markers. For bare samples without pre-existing markers, see the next comment.
+# record real coordinates from SEM window...
+
+
+mea_c;pg move position 66574,-49320 --rel           # (...2, from C-pattern)
+# findmark rp20  # >>>> (type after each joymark, then press Enter). # This is used if your sample has pre-existing markers. For bare samples without pre-existing markers, see the next comment.
+# record real coordinates from SEM window...
+
+
+mea_c;pg move position 84601,-49320 --rel           # (...3, from C-pattern)
+# findmark rp20  # >>>> (enter after each joymark, then press Enter). # This is used if your sample has pre-existing markers. For bare samples without pre-existing markers, see the next comment.
+# record real coordinates from SEM window...
+_________________________________________________________________________________________________________
+(option: writejob)
+# a neat technique for recording coordinates below, involves typing in the last 3 numbers after the decimal (to the right of the decimal, followed by entering the remaining numbers to the left of the decimal.
+
+# (Use this to record SEM coordinates prior to performing "joyplus")
+
+# "joyplus" marker instructions (be sure to gradually zoom in to the desired joymarker locations on the chip):
+
+joyplus >> follow prompt to center desired marker locations on SEM window.
+pg move (coordinates, e.g. 85754.200,121167.850) - (remember to press Enter and not q).
+
+job OJB_400_Qubits.job 3 0 83174.000,49980.000 101201.000,49980.000 83174.000,31948.000 101201.000,31948.000  #this is an example.
+
+(find each marker manually upon 2nd prompt to center marker locations on SEM window - this is a confirmation)
+Press Enter for each confirmed coordinate (it should result in a "found" joymarker).
+
+
+# After entering real coordinates, enter the job command as shown above >> after the command runs, there will be a prompt that will allow you to use the built-in SEM to confirm or adjust the location of virtual, joy markers >> let exposure run. 
+
+# Here's an example for magnetic tunnel junctions Onri_NanoMTJ_Array_RuO2_01_MTJ_Chip_Full.job
+
+# (these numbers/coordinates are configured like a Z-pattern, taken from SEM coordinates in order, as opposed to the C-pattern that was recorded with the digital microscope, instead of 1-2-3-4, it goes 1-4-2-3)
+
+subu 1 # command to unload the sample holder from the lithography equipment, proceed to vent the vacuum chamber.
+
+
+
+
