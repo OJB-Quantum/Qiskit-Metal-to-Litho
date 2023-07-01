@@ -69,9 +69,9 @@ ________________________________________________________________________________
 
 ![249468107-5d549f3e-53bb-4b9d-8056-8a0564af98f9](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/ec7fb884-9080-4c12-8b05-b61de7151f7d)
 
-![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/911b364e-ef05-4c2e-a56a-2127f713cd92)
 
-![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/2085c2ea-ff66-4103-8d2c-a699a235fed0)
+
+
 
 ![unnamed](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/136c6ce6-568a-4477-ad70-89df4ee516ab)
 
