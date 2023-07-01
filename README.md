@@ -24,7 +24,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 
 
 ### 2D CAD programs available:
-- AutoCAD or AutoCAD Web (cost effective alternative to locally-installed AutoCAD: https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP)
+- AutoCAD or AutoCAD Web (cost effective alternative to locally-installed AutoCAD): https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP)
 - QCAD (open-sourced and simple: https://qcad.org/en)
 - LibreCAD (open-sourced and feature-packed: https://librecad.org)
 
