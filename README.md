@@ -58,7 +58,7 @@ ________________________________________________________________________________
 ### Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
 - https://github.com/qiskit-community/qiskit-metal/tree/main
 _________________________________________________________________________________________________________________________________________________
-### To create the chip below, follow tutorials from the folder called "Python Code_Qiskit Metal_Designs" in main branch above. Then, proceed to the file called "[Transmon Chip Fabrication Process Flow](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Transmon%20Chip%20Fabrication%20Process%20Flow.pdf)", also in the main branch. 
+### To create the chip below, follow tutorials from the folder called "[Python Code_Qiskit Metal_Designs](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/tree/main/Python%20Code_Qiskit%20Metal_Designs)" in main branch above. Then, proceed to the file called "[Transmon Chip Fabrication Process Flow](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Transmon%20Chip%20Fabrication%20Process%20Flow.pdf)", also in the main branch. 
 _________________________________________________________________________________________________________________________________________________
 
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/a8553658-9b1f-4c46-a6c2-fdcef7639d29)
