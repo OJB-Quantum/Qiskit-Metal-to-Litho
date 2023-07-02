@@ -39,7 +39,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 ### Open-source Finite Element Method software (alternative to Ansys):
 - https://github.com/ElmerCSC/elmerfem
 
-### Open-source mesh generator:
+### Open-source mesh generator (to prepare design for use in Finite Element Method software):
 - https://gmsh.info/#Download
 
 ### Electron- and LASER-beam lithography software:
