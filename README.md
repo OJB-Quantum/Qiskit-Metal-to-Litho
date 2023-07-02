@@ -36,7 +36,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 - Raith_GDSII MATLAB Toolbox (public licensed: https://github.com/ahryciw/Raith_GDSII)
 - Octave/ MATLAB Toolbox for GDSII (public domain: https://github.com/ulfgri/gdsii-toolbox)
 
-### Open-source Finite Element Method software:
+### Open-source Finite Element Method software (alternative to Ansys):
 - https://github.com/ElmerCSC/elmerfem
 
 ### Open-source mesh generator:
