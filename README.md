@@ -56,6 +56,11 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 
 ### List of available process recipes:
 - https://lab.kni.caltech.edu/Process_Recipe_Library
+
+### List of open-source process development kits (optional for exploration):
+- https://gdsfactory.github.io/ubc
+- https://gdsfactory.github.io/skywater130
+- https://gdsfactory.github.io/gf180
 _________________________________________________________________________________________________________________________________________________
 ### Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
 - https://github.com/qiskit-community/qiskit-metal/tree/main
