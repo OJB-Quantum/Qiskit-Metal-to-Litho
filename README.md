@@ -42,6 +42,9 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 ### Open-source mesh generator (to prepare design for use in Finite Element Method software):
 - https://gmsh.info/#Download
 
+## Open-source device simulation tools:
+- https://gdsfactory.github.io/gdsfactory/plugins_process.html
+
 ### Electron- and LASER-beam lithography software:
 - BEAMER (from GenIsys: https://www.genisys-gmbh.com/beamer.html [usually purchased by your lab])
 
