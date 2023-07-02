@@ -1,7 +1,7 @@
 # Qiskit-Metal-to-Litho
 On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip, performed via direct-write lithography. Depending on the resolution of desired quantum device features, LASER, scanning thermal probe, and electron-beam techniques are applicable options for patterning your design.
 
-(Note: in the patterned 400-transmon example below, the ground contacts were excluded from layout as the design was to demonstrate process feasibility from Qiskit Metal design-to-real-chip. However, the main features are clearly visible under optical microscopy. Also, I included a DXF/GDS design output for a full quantum chip ready for fabrication [electrodes, ground, and all], available to download in the file directories above).
+(Note: in the patterned 400-transmon example below, the ground contacts were excluded from layout as the design was to demonstrate process feasibility from Qiskit Metal design-to-real-chip. However, the main features are clearly visible under optical microscopy. Also, I included a DXF/GDS design output for a [full quantum chip](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/GDS%20Files/Full%20Chip%20Ex-001.GDS), ready for fabrication [electrodes, ground, and all], available to download in the file directories above).
 
 ![20230616_081944](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/7c20c740-19f3-4a0e-b471-a6ab591f89c0)
 
