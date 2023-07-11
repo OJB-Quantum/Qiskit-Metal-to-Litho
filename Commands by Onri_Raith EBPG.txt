@@ -21,7 +21,7 @@ ________________________________________________________________________________
 (options: shape - rectangle or cross [rect or cross], positive or negative tone [pos or neg], position in microns - width and height, & joy marker type)
 _________________________________________________________________________________________________________
 # 1st command is to locate Faraday cup, followed by real or virtual marker position in (real, measured) microns. The semicolon combines both commands. 
-# You can also use: pg move position 74101.000,55695.000 or specific coordinate on SEM to move to exact location during troubleshooting.   #82217.300,121140.300 85775.800,121138.900 82215.605,117030.505 85774.395,117029.875
+# You can also use: pg move position 74101.000,55695.000 or specific coordinate on SEM to move to exact location during troubleshooting.   # 82217.300,121140.300 85775.800,121138.900 82215.605,117030.505 85774.395,117029.875
 # Replace coordinates below with coordinates that have been recorded during the sample holder calibration & adjustment.
 
 
@@ -54,7 +54,7 @@ ________________________________________________________________________________
 joyplus >> follow prompt to center desired marker locations on SEM window.
 pg move (coordinates, e.g. 85754.200,121167.850) - (remember to press Enter and not q).
 
-job OJB_400_Qubits.job 3 0 83174.000,49980.000 101201.000,49980.000 83174.000,31948.000 101201.000,31948.000  #this is an example.
+job OJB_400_Qubits.job 3 0 83174.000,49980.000 101201.000,49980.000 83174.000,31948.000 101201.000,31948.000  # this is an example.
 
 (find each marker manually upon 2nd prompt to center marker locations on SEM window - this is a confirmation)
 Press Enter for each confirmed coordinate (it should result in a "found" joymarker).
