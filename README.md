@@ -111,4 +111,4 @@ ________________________________________________________________________________
 
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/38c5a780-264f-42a7-8bd4-31179b3224ac)
 
-![image](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOG53cnp6eHVmMHpnbzJhZWRrdjI1dHZlbGF4Ynd4b3BnazdkM3hnMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rea0bjFOmKzwoXWHZo/giphy.gif)
+![image]()
