@@ -8,7 +8,9 @@
 • Install Visual Studio Installer from online >> install Visual Studio Community (Check the boxes on the right-side panel or under the Individual Components tab & be sure to select Windows 10 or 11 SDK). Select the C++ options on the Universal Windows Platform development box as well, including the Desktop Development with C++. [pip install gdspy won't be able to build wheels without an updated Visual Studio or Visual Studio Build Tools].
 • Upgrade pip: python -m pip install --upgrade pip setuptools wheel
 • Run a script to install directly from the GitHub URL: pip install git+https://github.com/qiskit-community/qiskit-metal (not the git URL)
+• Run the next script to install a DXF interface: pip install git+https://github.com/mozman/ezdxf
 ___________________________________________________________________________
+• To export the GDS file from the Qiskit Metal render, go to the GDS button on the UI and select the download location using the browse button. Press Enter, then check download location in the File Explorer. Proceed with converting the downloaded file into a GDS by renaming the file with a .gds at the end of the name to turn it into GDS filetype.
 • To add darkmode manually to Qiskit Metal, type (pip install qdarkstyle).
 • To update Qiskit Metal, type (pip install --upgrade qiskit_metal).
 • If the install is bringing up an error, be sure to restart entire system.
