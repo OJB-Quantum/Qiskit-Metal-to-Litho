@@ -3,7 +3,7 @@
 # Install Jupyter.
 # Install Anaconda.
 # Open Command Prompt >> type (git --version) to be sure git is there >> type (conda --version) to be sure a conda variation is there.
-# Install Visual Studio Installer >> install Visual Studio Community (Check the boxes on the right-side panel & be sure to select Windows 10 or 11 SDK). [pip install gdspy won't be able to build wheels without an updated Visual Studio or Visual Studio Build Tools].
+# Install Visual Studio Installer >> install Visual Studio Community (Check the boxes on the right-side panel or under the Individual Components tab & be sure to select Windows 10 or 11 SDK). [pip install gdspy won't be able to build wheels without an updated Visual Studio or Visual Studio Build Tools].
 # Open Anaconda Prompt as admin.
 # Type (conda env create -n <name of custom quantum environment> .\environment.yml). [If there is an error, likely it is because there is no yml file type located there. The yml file type is needed for this to work].
 # Open a new Command Prompt window [run as administrator] >> type (conda update -n base -c defaults conda) >> press Enter >> when prompted to proceed with update, type (y) >> press Enter >> close command window.
