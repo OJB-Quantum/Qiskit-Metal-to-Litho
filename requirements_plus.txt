@@ -1,10 +1,9 @@
 • Double check online or on ChatGPT for recommended Python version for desired package to be installed.
 • Download and install Anaconda. Make sure Jupyter Notebook gets installed.
 • Install pip and conda. Confirm versions: conda install pip conda >> pip --version >> conda --version
-• Install ipykernel: conda install ipykernel
 • Create new environment: conda create --name <custom Qiskit Metal enviroment name> python=3.9 (or other recommended Python version)
-• Create custom kernel for GPU stuff using ipykernel: python -m ipykernel install --user --name=<kernel name>
 • Access the new Qiskit Metal environment, proceed with installing desired packages and their dependencies: conda activate <custom Qiskit Metal environment name>
+• Install ipykernel. Create custom kernel using ipykernel: conda install -c conda-forge ipykernel >> python -m ipykernel install --user --name=<name of custom kernel>
 • Install Git: conda install git -y
 • Install Visual Studio Installer from online >> install Visual Studio Community (Check the boxes on the right-side panel or under the Individual Components tab & be sure to select Windows 10 or 11 SDK). Select the C++ options on the Universal Windows Platform development box as well, including the Desktop Development with C++. [pip install gdspy won't be able to build wheels without an updated Visual Studio or Visual Studio Build Tools].
 • Upgrade pip: python -m pip install --upgrade pip setuptools wheel
