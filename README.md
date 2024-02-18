@@ -25,7 +25,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 - Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter)
 - Electron- and LASER-beam lithography software (GDS-to-GPF converter for equipment)
 
-## Installation steps for Qiskit Metal can be found in the "[requirements_plus](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/requirements_plus.txt)" file stored on this repository.
+## Installation steps for Qiskit Metal can be found in the "[Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf)" file stored on this repository.
 
 
 ### 2D CAD programs available:
