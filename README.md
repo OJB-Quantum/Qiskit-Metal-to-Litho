@@ -20,6 +20,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | Marker | The use of reference points on a coordinate plane that are assigned to a pre-existing, detectable pattern on a chip sample. Detection is performed automatically by the lithography equipment using commands such as "rp20". |
 | Marker-free | The use of virtual reference points assigned to the region of interest to be patterned on a bare chip sample, wafer substrate, or other sample with without detectable markers. |
 
+________________________________________________________________________________________________________________________________
 | If You Need to Install pip Through Python, Follow These Steps: |
 | - |
 | • First, install an exe file of Python from: https://www.python.org/downloads |
