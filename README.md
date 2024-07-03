@@ -6,12 +6,6 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 
 (Note: in the patterned 400-transmon example below, the ground contacts were excluded from layout as the design was to demonstrate process feasibility from Qiskit Metal design-to-real-chip. However, the main features are clearly visible under optical microscopy. Also, I included a DXF/GDS design output for a [full quantum chip](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/GDS%20Files/Full%20Chip%20Ex-001.GDS), ready for fabrication [electrodes, ground, and all], available to download in the file directories above).
 
-| If You Need to Install pip Through Python, Follow These Steps: |
-| - |
-| • First, install an exe file of Python from: https://www.python.org/downloads |
-| • Then, install pip by entering the following command: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py |
-| • Now, pip is ready for use! |
-
 ![20230616_081944](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/7c20c740-19f3-4a0e-b471-a6ab591f89c0)
 
 | It Is Important to Know That There Are 2 Main Types of Patterning With the E-Beam Writer (EBPG) Equipment: | Description |
@@ -33,6 +27,12 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | 2D CAD program |
 | Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter) |
 | Electron- & LASER-beam lithography software (GDS-to-GPF converter for equipment) |
+
+| If You Need to Install pip Through Python, Follow These Steps: |
+| - |
+| • First, install an exe file of Python from: https://www.python.org/downloads |
+| • Then, install pip by entering the following command: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py |
+| • Now, pip is ready for use! |
 
 ## Installation steps for Qiskit Metal can be found in the "[Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf)" file stored on this repository.
 
