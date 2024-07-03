@@ -21,7 +21,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | Marker-free | The use of virtual reference points assigned to the region of interest to be patterned on a bare chip sample, wafer substrate, or other sample with without detectable markers. |
 
 
-| ## Required Software (Some Open-Source, Free Versions Are Linked Below): |
+| Required Software (Some Open-Source, Free Versions Are Linked Below): |
 | - |
 | • Qiskit Metal |
 | • 2D CAD program |
@@ -59,35 +59,35 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | Electron- & LASER-Beam Lithography Software: |
 | • BEAMER (from GenIsys: https://www.genisys-gmbh.com/beamer.html [usually purchased by your lab]) |
 
-| ### Slides & Webinars for Using Electron-Beam Lithography Software: |
+| Slides & Webinars for Using Electron-Beam Lithography Software: |
 | - |
 | • https://www.genisys-gmbh.com/webinar-series-beamer-training.html |
 
-| ### General Overview of Electron-Beam Lithography: |
+| General Overview of Electron-Beam Lithography: |
 | - |
 | • https://nano.yale.edu/book/export/html/213 |
 | • https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography |
 
-| ### Examples of Green [Sustainable] Lithography-Based Direct-Write Patterning: |
+| Examples of Green [Sustainable] Lithography-Based Direct-Write Patterning: |
 | - |
 | • https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223 |
 | • https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533 |
 
-| ### List of Standard Negative/ Positive Tone Resist Materials: |
+| List of Standard Negative/ Positive Tone Resist Materials: |
 | - |
 | • https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534 |
 | • https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html |
 
-| ### List of Available Process Recipes: |
+| List of Available Process Recipes: |
 | - |
 | • https://lab.kni.caltech.edu/Process_Recipe_Library |
 
-| ### List of Open-Source Process Development Kits & More (Optional): |
+| List of Open-Source Process Development Kits & More (Optional): |
 | - |
-| • SiEPIC Ebeam PDK (https://gdsfactory.github.io/ubc)
-| • Skywater 130 PDK (https://gdsfactory.github.io/skywater130)
-| • GlobalFoundries 180 PDK (https://gdsfactory.github.io/gf180)
-| • Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.] (https://github.com/gdsfactory/gdsfactory)
+| SiEPIC Ebeam PDK (https://gdsfactory.github.io/ubc)
+| Skywater 130 PDK (https://gdsfactory.github.io/skywater130)
+| GlobalFoundries 180 PDK (https://gdsfactory.github.io/gf180)
+| Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.] (https://github.com/gdsfactory/gdsfactory)
 _________________________________________________________________________________________________________________________________________________
 | ### Some of the Code Used Here are Borrowed or Inspired From the Qiskit Metal Page: |
 | - |
