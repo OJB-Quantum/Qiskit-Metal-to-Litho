@@ -20,14 +20,6 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | Marker | The use of reference points on a coordinate plane that are assigned to a pre-existing, detectable pattern on a chip sample. Detection is performed automatically by the lithography equipment using commands such as "rp20". |
 | Marker-free | The use of virtual reference points assigned to the region of interest to be patterned on a bare chip sample, wafer substrate, or other sample with without detectable markers. |
 
-
-| Required Software (Some Open-Source, Free Versions Are Linked Below): |
-| - |
-| Qiskit Metal |
-| 2D CAD program |
-| Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter) |
-| Electron- & LASER-beam lithography software (GDS-to-GPF converter for equipment) |
-
 | If You Need to Install pip Through Python, Follow These Steps: |
 | - |
 | • First, install an exe file of Python from: https://www.python.org/downloads |
@@ -35,6 +27,14 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | • Now, pip is ready for use! |
 
 ## Installation steps for Qiskit Metal can be found in the "[Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf)" file stored on this repository.
+
+
+| Required Software (Some Open-Source, Free Versions Are Linked Below): |
+| - |
+| Qiskit Metal |
+| 2D CAD program |
+| Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter) |
+| Electron- & LASER-beam lithography software (GDS-to-GPF converter for equipment) |
 
 
 | 2D CAD Programs Available: | Description |
