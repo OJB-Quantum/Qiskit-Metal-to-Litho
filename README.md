@@ -90,7 +90,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | GlobalFoundries 180 PDK: https://gdsfactory.github.io/gf180 |
 | Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.]: https://github.com/gdsfactory/gdsfactory |
 _________________________________________________________________________________________________________________________________________________
-| ### Some of the Code Used Here are Borrowed or Inspired From the Qiskit Metal Page: |
+| Some of the Code Used Here are Borrowed or Inspired From the Qiskit Metal Page: |
 | - |
 | https://github.com/qiskit-community/qiskit-metal |
 _________________________________________________________________________________________________________________________________________________
