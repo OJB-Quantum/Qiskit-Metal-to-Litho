@@ -85,10 +85,10 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 
 | List of Open-Source Process Development Kits & More (Optional): |
 | - |
-| SiEPIC Ebeam PDK (https://gdsfactory.github.io/ubc)
-| Skywater 130 PDK (https://gdsfactory.github.io/skywater130)
-| GlobalFoundries 180 PDK (https://gdsfactory.github.io/gf180)
-| Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.] (https://github.com/gdsfactory/gdsfactory)
+| SiEPIC Ebeam PDK: https://gdsfactory.github.io/ubc |
+| Skywater 130 PDK: https://gdsfactory.github.io/skywater130 |
+| GlobalFoundries 180 PDK: https://gdsfactory.github.io/gf180 |
+| Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.]: https://github.com/gdsfactory/gdsfactory |
 _________________________________________________________________________________________________________________________________________________
 | ### Some of the Code Used Here are Borrowed or Inspired From the Qiskit Metal Page: |
 | - |
