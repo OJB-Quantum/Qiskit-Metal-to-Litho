@@ -8,75 +8,90 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 
 ![20230616_081944](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/7c20c740-19f3-4a0e-b471-a6ab591f89c0)
 
-## It is important to know that there are 2 main types of patterning with the e-beam writer (EBPG) equipment: 
-- (Marker-based using "rp" commands) - this is used if your sample has pre-existing markers patterned on it already [ex. sample WITH purposely-designed reference points that can be automatically located by the EBPG's built-in SEM tool].
-- (Marker-free-based using "joyplus" commands) - this is used if your sample has no pre-existing referencing patterns [ex. bare substrate or other sample WITHOUT purposely-designed reference points].
+| ## It is important to know that there are 2 main types of patterning with the e-beam writer (EBPG) equipment: | Description |
+| - | - |
+| • (Marker-based using "rp" commands) | This is used if your sample has pre-existing markers patterned on it already [ex. sample WITH purposely-designed reference points that can be automatically located by the EBPG's built-in SEM tool]. |
+| • (Marker-free-based using "joyplus" commands) | This is used if your sample has no pre-existing referencing patterns [ex. bare substrate or other sample WITHOUT purposely-designed reference points]. |
 
-## Terms to be aware of:
-- BEAMER - Desktop software for importing GDSII or GDS files stored on WinSCP, beam step, size, and error correction (heal) paramters are set here and subsequently exported as GPF files that can be read by the EBPG equipment. Additionally the parameters can be downloaded as a Python script (.py). An example of a Python script used in BEAMER is available for reference in the file directory above.
-- CJOB - Software tool that is accessed on the EBPG equipment itself using the EBPG's terminal. From here, the GPF files can be uploaded and programmed with virtual alignment marker locations based on the uploaded design. Once the file is ready, it will export as a JOB file (.job). The JOB file name is what gets copied into the EBPG's terminal along with 4 coordinates validated by the built-in SEM.
-- Marker - The use of reference points on a coordinate plane that are assigned to a pre-existing, detectable pattern on a chip sample. Detection is performed automatically by the lithography equipment using commands such as "rp20".
-- Marker-free - The use of virtual reference points assigned to the region of interest to be patterned on a bare chip sample, wafer substrate, or other sample with without detectable markers.
+| ## Terms to be aware of: | Description |
+| - | - |
+| BEAMER | Desktop software for importing GDSII or GDS files stored on WinSCP, beam step, size, and error correction (heal) paramters are set here and subsequently exported as GPF files that can be read by the EBPG equipment. Additionally the parameters can be downloaded as a Python script (.py). An example of a Python script used in BEAMER is available for reference in the file directory above. |
+| CJOB | Software tool that is accessed on the EBPG equipment itself using the EBPG's terminal. From here, the GPF files can be uploaded and programmed with virtual alignment marker locations based on the uploaded design. Once the file is ready, it will export as a JOB file (.job). The JOB file name is what gets copied into the EBPG's terminal along with 4 coordinates validated by the built-in SEM. |
+| Marker | The use of reference points on a coordinate plane that are assigned to a pre-existing, detectable pattern on a chip sample. Detection is performed automatically by the lithography equipment using commands such as "rp20". |
+| Marker-free | The use of virtual reference points assigned to the region of interest to be patterned on a bare chip sample, wafer substrate, or other sample with without detectable markers. |
 
 
-## Required software (some open-source free versions will be linked below):
-- Qiskit Metal
-- 2D CAD program
-- Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter)
-- Electron- and LASER-beam lithography software (GDS-to-GPF converter for equipment)
+| ## Required Software (Some Open-Source, Free Versions Are Linked Below): |
+| - |
+| • Qiskit Metal |
+| • 2D CAD program |
+| • Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter) |
+| • Electron- and LASER-beam lithography software (GDS-to-GPF converter for equipment) |
 
 ## Installation steps for Qiskit Metal can be found in the "[Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf)" file stored on this repository.
 
 
-### 2D CAD programs available:
-- AutoCAD or AutoCAD Web (cost effective alternative to locally-installed AutoCAD): https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP)
-- QCAD (open-sourced and simple: https://qcad.org/en)
-- LibreCAD (open-sourced and feature-packed: https://librecad.org)
+### 2D CAD Programs Available: | Description |
+| - | - |
+• AutoCAD or AutoCAD Web | Cost effective alternative to locally-installed AutoCAD: https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP |
+• QCAD | Open-sourced & simple: https://qcad.org/en |
+• LibreCAD | Open-sourced & feature-packed: https://librecad.org |
 
-### Pattern layout viewers & editors:
-- LinkCAD (paid version: https://www.linkcad.com/download.php [usually purchased by your lab])
-- KLayout (open-sourced & feature-packed: https://www.klayout.de/build.html)
-- Raith_GDSII MATLAB Toolbox (public licensed: https://github.com/ahryciw/Raith_GDSII)
-- Octave/ MATLAB Toolbox for GDSII (public domain: https://github.com/ulfgri/gdsii-toolbox)
+### Pattern Layout Viewers & Editors: | Description |
+| - | - |
+| • LinkCAD | Paid version: https://www.linkcad.com/download.php [usually purchased by your lab] |
+| • KLayout | Open-sourced & feature-packed: https://www.klayout.de/build.html |
+| • Raith_GDSII MATLAB Toolbox | Public licensed: https://github.com/ahryciw/Raith_GDSII |
+| • Octave/ MATLAB Toolbox for GDSII | Public domain: https://github.com/ulfgri/gdsii-toolbox |
 
-### Open-source Finite Element Method software (alternative to Ansys):
-- https://github.com/ElmerCSC/elmerfem
+### Open-Source Finite Element Method Software (Alternative to Ansys): |
+| - |
+| • https://github.com/ElmerCSC/elmerfem |
 
-### Open-source mesh generator (to prepare design for use in Finite Element Method software):
-- https://gmsh.info/#Download
+| ### Open-Source Mesh Generator (To Prepare Design for Use in Finite Element Method Software): |
+| - |
+| • https://gmsh.info/#Download |
 
-## Open-source device simulation tools:
-- https://gdsfactory.github.io/gdsfactory/plugins_process.html
+| ## Open-Source Device Simulation Tools: |
+| - |
+| • https://gdsfactory.github.io/gdsfactory/plugins_process.html |
 
-### Electron- and LASER-beam lithography software:
-- BEAMER (from GenIsys: https://www.genisys-gmbh.com/beamer.html [usually purchased by your lab])
+| ### Electron- & LASER-Beam Lithography Software: |
+| • BEAMER (from GenIsys: https://www.genisys-gmbh.com/beamer.html [usually purchased by your lab]) |
 
-### Slides and webinars for using electron-beam lithography software:
-- https://www.genisys-gmbh.com/webinar-series-beamer-training.html
+| ### Slides & Webinars for Using Electron-Beam Lithography Software: |
+| - |
+| • https://www.genisys-gmbh.com/webinar-series-beamer-training.html |
 
-### General overview of electron-beam lithography:
-- https://nano.yale.edu/book/export/html/213
-- https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography
+| ### General Overview of Electron-Beam Lithography: |
+| - |
+| • https://nano.yale.edu/book/export/html/213 |
+| • https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography |
 
-### Examples of green lithography-based direct-write patterning:
-- https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223
-- https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533
+| ### Examples of Green [Sustainable] Lithography-Based Direct-Write Patterning: |
+| - |
+| • https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223 |
+| • https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533 |
 
-### List of standard negative/ positive resist materials:
-- https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534
-- https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html
+|### List of Standard Negative/ Positive Tone Resist Materials: |
+| - |
+| • https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534 |
+| • https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html |
 
-### List of available process recipes:
-- https://lab.kni.caltech.edu/Process_Recipe_Library
+### List of Available Process Recipes: |
+| - |
+| • https://lab.kni.caltech.edu/Process_Recipe_Library |
 
-### List of open-source process development kits & more (optional):
-- SiEPIC Ebeam PDK (https://gdsfactory.github.io/ubc)
-- Skywater 130 PDK (https://gdsfactory.github.io/skywater130)
-- GlobalFoundries 180 PDK (https://gdsfactory.github.io/gf180)
-- Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.] (https://github.com/gdsfactory/gdsfactory)
+| ### List of Open-Source Process Development Kits & More (Optional): |
+| - |
+| • SiEPIC Ebeam PDK (https://gdsfactory.github.io/ubc)
+| • Skywater 130 PDK (https://gdsfactory.github.io/skywater130)
+| • GlobalFoundries 180 PDK (https://gdsfactory.github.io/gf180)
+| • Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.] (https://github.com/gdsfactory/gdsfactory)
 _________________________________________________________________________________________________________________________________________________
-### Some of the code used here are borrowed or inspired from the Qiskit Metal page: 
-- https://github.com/qiskit-community/qiskit-metal/tree/main
+| ### Some of the Code Used Here are Borrowed or Inspired From the Qiskit Metal Page: |
+| - |
+| • https://github.com/qiskit-community/qiskit-metal |
 _________________________________________________________________________________________________________________________________________________
 ## To create the chip below, follow tutorials from the folder called "[Python Code_Qiskit Metal_Designs](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/tree/main/Python%20Code_Qiskit%20Metal_Designs)" on main branch in this repository. Afterwards, proceed to a file called "[Transmon Chip Fabrication Process Flow](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Transmon%20Chip%20Fabrication%20Process%20Flow.pdf)", also on the main branch. (Optionally, click on both hyperlinks to find the tutorials).
 _________________________________________________________________________________________________________________________________________________
