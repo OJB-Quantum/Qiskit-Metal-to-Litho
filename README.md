@@ -27,7 +27,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | • Now, pip is ready for use! |
 
 ### Installation steps for Qiskit Metal can be found in the "[Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf)" file stored on this repository.
-
+________________________________________________________________________________________________________________________________
 
 | Required Software (Some Open-Source, Free Versions Are Linked Below): |
 | - |
