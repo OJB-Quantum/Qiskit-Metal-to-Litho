@@ -27,7 +27,9 @@ ________________________________________________________________________________
 | • Then, install pip by entering the following command: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py |
 | • Now, pip is ready for use! |
 
-### Installation steps for Qiskit Metal can be found in the "[Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf)" file stored on this repository.
+| Installation Steps for Qiskit Metal|
+| - |
+| [Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf)" |
 ________________________________________________________________________________________________________________________________
 
 | Required Software (Some Open-Source, Free Versions Are Linked Below): |
