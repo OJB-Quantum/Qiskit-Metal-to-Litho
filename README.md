@@ -31,32 +31,32 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 ## Installation steps for Qiskit Metal can be found in the "[Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf)" file stored on this repository.
 
 
-### 2D CAD Programs Available: | Description |
+| 2D CAD Programs Available: | Description |
 | - | - |
-• AutoCAD or AutoCAD Web | Cost effective alternative to locally-installed AutoCAD: https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP |
-• QCAD | Open-sourced & simple: https://qcad.org/en |
-• LibreCAD | Open-sourced & feature-packed: https://librecad.org |
+| • AutoCAD or AutoCAD Web | Cost effective alternative to locally-installed AutoCAD: https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP |
+| • QCAD | Open-sourced & simple: https://qcad.org/en |
+| • LibreCAD | Open-sourced & feature-packed: https://librecad.org |
 
-### Pattern Layout Viewers & Editors: | Description |
+| Pattern Layout Viewers & Editors: | Description |
 | - | - |
 | • LinkCAD | Paid version: https://www.linkcad.com/download.php [usually purchased by your lab] |
 | • KLayout | Open-sourced & feature-packed: https://www.klayout.de/build.html |
 | • Raith_GDSII MATLAB Toolbox | Public licensed: https://github.com/ahryciw/Raith_GDSII |
 | • Octave/ MATLAB Toolbox for GDSII | Public domain: https://github.com/ulfgri/gdsii-toolbox |
 
-### Open-Source Finite Element Method Software (Alternative to Ansys): |
+| Open-Source Finite Element Method Software (Alternative to Ansys): |
 | - |
 | • https://github.com/ElmerCSC/elmerfem |
 
-| ### Open-Source Mesh Generator (To Prepare Design for Use in Finite Element Method Software): |
+| Open-Source Mesh Generator (To Prepare Design for Use in Finite Element Method Software): |
 | - |
 | • https://gmsh.info/#Download |
 
-| ## Open-Source Device Simulation Tools: |
+| Open-Source Device Simulation Tools: |
 | - |
 | • https://gdsfactory.github.io/gdsfactory/plugins_process.html |
 
-| ### Electron- & LASER-Beam Lithography Software: |
+| Electron- & LASER-Beam Lithography Software: |
 | • BEAMER (from GenIsys: https://www.genisys-gmbh.com/beamer.html [usually purchased by your lab]) |
 
 | ### Slides & Webinars for Using Electron-Beam Lithography Software: |
@@ -73,12 +73,12 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | • https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223 |
 | • https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533 |
 
-|### List of Standard Negative/ Positive Tone Resist Materials: |
+| ### List of Standard Negative/ Positive Tone Resist Materials: |
 | - |
 | • https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534 |
 | • https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html |
 
-### List of Available Process Recipes: |
+| ### List of Available Process Recipes: |
 | - |
 | • https://lab.kni.caltech.edu/Process_Recipe_Library |
 
