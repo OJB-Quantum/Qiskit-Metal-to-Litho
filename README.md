@@ -23,8 +23,8 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 ________________________________________________________________________________________________________________________________
 | If You Need to Install pip Through Python, Follow These Steps: |
 | - |
-| • First, install an exe file of Python from: https://www.python.org/downloads |
-| • Then, install pip by entering the following command: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py |
+| • First, install an EXE file of Python from: https://www.python.org/downloads |
+| • Then, install pip by entering the following command into local terminal: curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py |
 | • Now, pip is ready for use! |
 
 | Installation Steps for Qiskit Metal: |
