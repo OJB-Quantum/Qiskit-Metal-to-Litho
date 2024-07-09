@@ -24,7 +24,8 @@ ________________________________________________________________________________
 | If You Need to Install pip Through Python, Follow These Steps: |
 | - |
 | • First, install an EXE file of Python from: https://www.python.org/downloads |
-| • Then, install pip by entering the following command into local terminal: ```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py``` |
+| • Then, install pip by entering the following command into local terminal: 
+```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py``` |
 | • Now, pip is ready for use! |
 
 | Installation Steps for Qiskit Metal: |
