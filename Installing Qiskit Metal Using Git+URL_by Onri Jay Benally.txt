@@ -1,0 +1,23 @@
+(This is the TXT version of the Qiskit Metal using Git+URL installation document written by Onri Jay Benally).
+___________________________________________________________________________
+• Check online or on ChatGPT for recommended Python versions compatible with desired package.
+• Download & install Miniconda & JupyterLab. Jupyter Notebook can be installed optionally. (https://docs.anaconda.com/miniconda & https://jupyter.org/install).
+• The following scripts for conda & pip commands should be performed in Anaconda Prompt [Admin]. Anaconda Prompt comes with the Miniconda installation. Check your app location.
+___________________________________________________________________________
+• Install pip. Confirm versions: conda install pip conda >> pip --version >> conda --version
+• Create new environment: conda create --name <custom Qiskit Metal environment name> python=3.9 (or other recommended Python version)
+• Access the new Qiskit Metal environment, proceed with installing desired packages & their dependencies: conda activate <custom Qiskit Metal environment name>
+• Install ipykernel. Create custom kernel using ipykernel: conda install -c conda-forge ipykernel >> python -m ipykernel install --user --name=<name of custom kernel>
+• Install Git: conda install git -y or download from https://git-scm.com/download/win
+• Install Visual Studio Installer from online >> install Visual Studio Community (Check the boxes on the right-side panel or under the Individual Components tab & be sure to select Windows 10 or 11 SDK). Select the C++ options on the Universal Windows Platform development box or Windows application development box (either one of the two), including the Desktop Development with C++. [pip install gdspy won't be able to build wheels without an updated Visual Studio or Visual Studio Build Tools].
+• Upgrade pip: python -m pip install --upgrade pip setuptools wheel
+• Run a script to install directly from the GitHub URL: pip install git+https://github.com/qiskit-community/qiskit-metal (not the git URL)
+• Run the next script to install a DXF interface: pip install git+https://github.com/mozman/ezdxf
+• Add these 3 associated paths [if using Anaconda] to System Variables: Anaconda3, Anaconda3\Scripts, & Anaconda3\Library\bin. If using Miniconda, add: miniconda3, miniconda3\Scripts, & miniconda3\Library\bin. Follow instructions from this video (https://youtu.be/Xa6m1hJHba0) for more details.
+• Done! Qiskit Metal should be ready to use.
+___________________________________________________________________________
+Options:
+• To export the GDS file from the Qiskit Metal render, go to the GDS button on the UI & select the download location using the browse button. Press Enter, then check download location in the File Explorer. Proceed with converting the downloaded file into a GDS by renaming the file with a .gds at the end of the name to turn it into GDS filetype.
+• To add darkmode manually to Qiskit Metal, type (pip install qdarkstyle) into Anaconda Prompt [Admin].
+• To update Qiskit Metal, type (pip install --upgrade qiskit_metal) into Anaconda Prompt [Admin].
+• If the install is bringing up an error, be sure to restart entire system.
