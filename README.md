@@ -31,6 +31,10 @@ ________________________________________________________________________________
 | Installation Steps for Qiskit Metal: |
 | - |
 | [Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf) |
+
+| Quantum Chip Rendering Steps: |
+| - |
+| [Qiskit Metal + KLayout + Blender](https://youtu.be/NxArWX8WhPc?si=C-xPu6bjvJBSJs_t) |
 ________________________________________________________________________________________________________________________________
 
 | Required Software (Some Open-Source, Free Versions Are Linked Below): |
