@@ -50,6 +50,7 @@ ________________________________________________________________________________
 | AutoCAD or AutoCAD Web | Cost effective alternative to locally-installed AutoCAD: https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP |
 | QCAD | Open-sourced & simple: https://qcad.org/en |
 | LibreCAD | Open-sourced & feature-packed: https://librecad.org |
+| FreeCAD | Open-sourced & feature-packed: https://www.freecad.org |
 
 | Pattern Layout Viewers & Editors: | Description |
 | - | - |
