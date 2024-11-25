@@ -31,6 +31,10 @@ ________________________________________________________________________________
 | Installation Steps for Qiskit Metal: |
 | - |
 | [Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf) |
+
+| Quantum Chip Rendering Steps: |
+| - |
+| [Qiskit Metal + KLayout + Blender](https://youtu.be/NxArWX8WhPc?si=C-xPu6bjvJBSJs_t) |
 ________________________________________________________________________________________________________________________________
 
 | Required Software (Some Open-Source, Free Versions Are Linked Below): |
@@ -46,6 +50,7 @@ ________________________________________________________________________________
 | AutoCAD or AutoCAD Web | Cost effective alternative to locally-installed AutoCAD: https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP |
 | QCAD | Open-sourced & simple: https://qcad.org/en |
 | LibreCAD | Open-sourced & feature-packed: https://librecad.org |
+| FreeCAD | Open-sourced & feature-packed: https://www.freecad.org |
 
 | Pattern Layout Viewers & Editors: | Description |
 | - | - |
@@ -138,6 +143,5 @@ ________________________________________________________________________________
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/38c5a780-264f-42a7-8bd4-31179b3224ac)
 
 ![Fibonacci Word Fractal Lines_80 nm](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/dd72498d-2067-451c-bba7-dafe6165f292)
-
 
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/OJB_Quantum_System.gif)
