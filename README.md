@@ -84,6 +84,12 @@ ________________________________________________________________________________
 | https://nano.yale.edu/book/export/html/213 |
 | https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography |
 
+| Open-Source Computational Lithography Tools: |
+| - |
+| https://github.com/looninho/CUDAEBL |
+| https://github.com/pierremifasol/Lithography-Simulation |
+| https://github.com/lani5677/Computational-lithography |
+
 | Examples of Green [Sustainable] Lithography-Based Direct-Write Patterning: |
 | - |
 | https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223 |
