@@ -55,8 +55,8 @@ ________________________________________________________________________________
 
 | Pattern Layout Viewers & Editors: | Description |
 | - | - |
-| LinkCAD | Paid version: https://www.linkcad.com/download.php [usually purchased by your lab] |
 | KLayout | Open-sourced & feature-packed: https://www.klayout.de/build.html |
+| LinkCAD | Paid version: https://www.linkcad.com/download.php [usually purchased by your lab] |
 | Raith_GDSII MATLAB Toolbox | Public licensed: https://github.com/ahryciw/Raith_GDSII |
 | Octave/ MATLAB Toolbox for GDSII | Public domain: https://github.com/ulfgri/gdsii-toolbox |
 
