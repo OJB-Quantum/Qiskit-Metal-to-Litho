@@ -51,6 +51,7 @@ ________________________________________________________________________________
 | QCAD | Open-sourced & simple: https://qcad.org/en |
 | LibreCAD | Open-sourced & feature-packed: https://librecad.org |
 | FreeCAD | Open-sourced & feature-packed: https://www.freecad.org |
+| Salome | Open-sourced & feature-packed: https://www.salome-platform.org/?page_id=2430 |
 
 | Pattern Layout Viewers & Editors: | Description |
 | - | - |
@@ -58,6 +59,11 @@ ________________________________________________________________________________
 | KLayout | Open-sourced & feature-packed: https://www.klayout.de/build.html |
 | Raith_GDSII MATLAB Toolbox | Public licensed: https://github.com/ahryciw/Raith_GDSII |
 | Octave/ MATLAB Toolbox for GDSII | Public domain: https://github.com/ulfgri/gdsii-toolbox |
+
+| Free or Open-Source List of Software for Design, Analysis, or Large Data Visualization: |
+| - |
+| https://dev.opencascade.org/about/projects_and_products |
+| https://www.paraview.org/download |
 
 | Open-Source Finite Element Method Software (Alternative to Ansys): |
 | - |
