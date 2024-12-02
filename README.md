@@ -60,7 +60,7 @@ ________________________________________________________________________________
 | Raith_GDSII MATLAB Toolbox | Public licensed: https://github.com/ahryciw/Raith_GDSII |
 | Octave/ MATLAB Toolbox for GDSII | Public domain: https://github.com/ulfgri/gdsii-toolbox |
 
-| Free or Open-Source List of Software for Design, Analysis, or Large Data Visualization: |
+| Free or Open-Source Software for Design, Analysis, or Large Data Visualization: |
 | - |
 | https://dev.opencascade.org/about/projects_and_products |
 | https://www.paraview.org/download |
