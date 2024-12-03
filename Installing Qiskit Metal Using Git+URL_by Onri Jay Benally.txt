@@ -6,7 +6,7 @@ ___________________________________________________________________________
 ___________________________________________________________________________
 • Create new environment: conda create --name <custom Qiskit Metal environment name> python=3.9 (or other recommended Python version)
 • Access the new Qiskit Metal environment, proceed with installing desired packages & their dependencies: conda activate <custom Qiskit Metal environment name>
-• Install pip in the custom enviroment. Confirm versions: conda install pip conda >> pip --version >> conda --version
+• Install pip in the custom enviroment (not the base enviroment). Confirm versions: conda install pip conda >> pip --version >> conda --version
 • Install ipykernel. Create custom kernel using ipykernel: conda install -c conda-forge ipykernel >> python -m ipykernel install --user --name=<name of custom kernel>
 • Install Git: conda install git -y or download from https://git-scm.com/download/win
 • Install Visual Studio Installer from online >> install Visual Studio Community (Check the boxes on the right-side panel or under the Individual Components tab & be sure to select Windows 10 or 11 SDK). Select the C++ options on the Universal Windows Platform development box or Windows application development box (either one of the two), including the Desktop Development with C++. [pip install gdspy won't be able to build wheels without an updated Visual Studio or Visual Studio Build Tools].
