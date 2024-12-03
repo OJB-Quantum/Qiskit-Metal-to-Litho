@@ -19,5 +19,5 @@ ___________________________________________________________________________
 Options:
 • To export the GDS file from the Qiskit Metal render, go to the GDS button on the UI & select the download location using the browse button. Press Enter, then check download location in the File Explorer. Proceed with converting the downloaded file into a GDS by renaming the file with a .gds at the end of the name to turn it into GDS filetype.
 • To add darkmode manually to Qiskit Metal, type (pip install qdarkstyle) into Anaconda Prompt [Admin].
-• To update Qiskit Metal, type (pip install --upgrade qiskit_metal) into Anaconda Prompt [Admin].
+• To update Qiskit Metal in Anaconda Prompt [Admin], first activate the local environment where you installed Qiskit Metal using (conda activate <custom Qiskit Metal environment name>), press Enter, then type (pip install --upgrade qiskit_metal).
 • If the install is bringing up an error, be sure to restart entire system.
