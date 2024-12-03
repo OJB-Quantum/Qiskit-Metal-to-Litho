@@ -4,7 +4,6 @@ ___________________________________________________________________________
 • Download & install Miniconda & JupyterLab. Jupyter Notebook can be installed optionally. (https://docs.anaconda.com/miniconda & https://jupyter.org/install).
 • The following scripts for conda & pip commands should be performed in Anaconda Prompt [Admin]. Anaconda Prompt comes with the Miniconda installation. Check your app location.
 ___________________________________________________________________________
-• Install pip in the base environment. Confirm versions: conda install pip conda >> pip --version >> conda --version
 • Create new environment: conda create --name <custom Qiskit Metal environment name> python=3.9 (or other recommended Python version)
 • Access the new Qiskit Metal environment, proceed with installing desired packages & their dependencies: conda activate <custom Qiskit Metal environment name>
 • Install pip in the custom enviroment. Confirm versions: conda install pip conda >> pip --version >> conda --version
