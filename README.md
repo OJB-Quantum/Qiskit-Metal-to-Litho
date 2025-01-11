@@ -27,8 +27,7 @@ ________________________________________________________________________________
 | If You Need to Install pip Through Python, Follow These Steps: |
 | - |
 | • First, install an EXE file of Python from: https://www.python.org/downloads |
-| • Then, install pip by entering the following command into local terminal: 
-```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py``` |
+| • Then, install pip by entering the following command into local terminal: ```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py``` |
 | • Now, pip is ready for use! |
 
 | Installation Steps for Qiskit Metal: |
@@ -119,7 +118,7 @@ ________________________________________________________________________________
 | SiEPIC Ebeam PDK: https://gdsfactory.github.io/ubc |
 | Skywater 130 PDK: https://gdsfactory.github.io/skywater130 |
 | GlobalFoundries 180 PDK: https://gdsfactory.github.io/gf180 |
-| Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.]: https://github.com/gdsfactory/gdsfactory |
+| Python library to design chips (Photonics, Analog, Quantum, MEMs, etc.): https://github.com/gdsfactory/gdsfactory |
 
 _________________________________________________________________________________________________________________________________________________
 | Some of the Code Used Here are Borrowed or Inspired From the Qiskit Metal Page: |
