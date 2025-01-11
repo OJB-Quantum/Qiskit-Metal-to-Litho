@@ -37,6 +37,7 @@ ________________________________________________________________________________
 | Quantum Chip Rendering Steps: |
 | - |
 | [Qiskit Metal + KLayout + Blender](https://youtu.be/NxArWX8WhPc?si=C-xPu6bjvJBSJs_t) |
+
 ________________________________________________________________________________________________________________________________
 
 | Required Software (Some Open-Source, Free Versions Are Linked Below): |
@@ -121,6 +122,7 @@ ________________________________________________________________________________
 | Python library to design chips (Photonics, Analog, Quantum, MEMs, etc.): https://github.com/gdsfactory/gdsfactory |
 
 _________________________________________________________________________________________________________________________________________________
+
 | Some of the Code Used Here are Borrowed or Inspired From the Qiskit Metal Page: |
 | - |
 | https://github.com/qiskit-community/qiskit-metal |
@@ -159,6 +161,5 @@ ________________________________________________________________________________
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/38c5a780-264f-42a7-8bd4-31179b3224ac)
 
 ![Fibonacci Word Fractal Lines_80 nm](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/dd72498d-2067-451c-bba7-dafe6165f292)
-
 
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/OJB_Quantum_System.gif)
