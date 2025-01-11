@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qiskit-Metal-to-Litho</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Qiskit-Metal-to-Litho</title>
 </head>
 <body>
   <h1>Qiskit-Metal-to-Litho</h1>
+
   <p>
-       <a href="https://choosealicense.com/licenses/cc-by-4.0">
-           <img src="https://img.shields.io/badge/Creative_Commons-License-green" alt="License" style="width:40%;">
-      </a>
-      <a href="https://mybinder.org/v2/gh/">
-          <img src="https://mybinder.org/badge_logo.svg" alt="Binder" style="width:40%;">
-      </a>
+    <a href="https://choosealicense.com/licenses/cc-by-4.0">
+      <img
+        src="https://img.shields.io/badge/Creative_Commons-License-green"
+        alt="License"
+        style="width:40%;"
+      />
+    </a>
+    <a href="https://mybinder.org/v2/gh/">
+      <img
+        src="https://mybinder.org/badge_logo.svg"
+        alt="Binder"
+        style="width:40%;"
+      />
+    </a>
   </p>
   <p>
-       <a href="https://doi.org/10.5281/zenodo.14621303">
-           <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14621303.svg" alt="DOI" style="width:40%;">
-       </a>
+    <a href="https://doi.org/10.5281/zenodo.14621303">
+      <img
+        src="https://zenodo.org/badge/DOI/10.5281/zenodo.14621303.svg"
+        alt="DOI"
+        style="width:40%;"
+      />
+    </a>
+  </p>
+
+  <p>
+    On the use of Qiskit Metal coded in Python to generate design files for
+    building quantum devices on a chip, performed via direct-write lithography.
+    Depending on the resolution of the desired quantum...
   </p>
   <p>
-    On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip,
-    performed via direct-write lithography. Depending on the resolution of desired quantum...
-  </p>
-  <p>
-    (Note: in the patterned 400-transmon example below, the ground contacts were excluded from layout as the design was to demonstrate process feasibility from Qiskit Metal design-to-real-chip. Howe...
+    (Note: in the patterned 400-transmon example below, the ground contacts were
+    excluded from layout as the design was to demonstrate process feasibility
+    from Qiskit Metal design to real chip. However...
   </p>
   <p>
     <img
@@ -33,6 +50,7 @@
       alt="20230616_081944"
     />
   </p>
+
   <!-- Additional content -->
 
   <table>
@@ -45,14 +63,23 @@
     <tbody>
       <tr>
         <td>Marker-based using "rp" commands</td>
-        <td>This is used if your sample has pre-existing markers patterned on it already [ex. sample WITH purposely-designed reference points that can be automatically located by the EBPG]</td>
+        <td>
+          This is used if your sample has pre-existing markers patterned on it
+          already [ex. sample WITH purposely-designed reference points that can
+          be automatically located by the EBPG]
+        </td>
       </tr>
       <tr>
         <td>Marker-free-based using "joyplus" commands</td>
-        <td>This is used if your sample has no pre-existing referencing patterns [ex. bare substrate or other sample WITHOUT purposely-designed reference points]</td>
+        <td>
+          This is used if your sample has no pre-existing referencing patterns
+          [ex. bare substrate or other sample WITHOUT purposely-designed
+          reference points]
+        </td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -63,22 +90,41 @@
     <tbody>
       <tr>
         <td>BEAMER</td>
-        <td>Desktop software for importing GDSII or GDS files stored on WinSCP, beam step, size, and error correction (heal) paramters are set here and subsequently exported as GPF files that can be uploaded to the EBPG equipment.</td>
+        <td>
+          Desktop software for importing GDSII or GDS files stored on WinSCP;
+          beam step size and error correction (heal) parameters are set here and
+          subsequently exported as GPF files that can be uploaded to the EBPG
+          equipment.
+        </td>
       </tr>
       <tr>
         <td>CJOB</td>
-        <td>Software tool that is accessed on the EBPG equipment itself using the EBPG's terminal. From here, the GPF files can be uploaded and programmed with virtual alignment marker locations based on the design.</td>
+        <td>
+          Software tool that is accessed on the EBPG equipment itself using the
+          EBPG's terminal. From here, the GPF files can be uploaded and
+          programmed with virtual alignment marker locations based on the
+          design.
+        </td>
       </tr>
       <tr>
         <td>Marker</td>
-        <td>The use of reference points on a coordinate plane that are assigned to a pre-existing, detectable pattern on a chip sample. Detection is performed automatically by the lithography equipment.</td>
+        <td>
+          The use of reference points on a coordinate plane that are assigned to
+          a pre-existing, detectable pattern on a chip sample. Detection is
+          performed automatically by the lithography equipment.
+        </td>
       </tr>
       <tr>
         <td>Marker-free</td>
-        <td>The use of virtual reference points assigned to the region of interest to be patterned on a bare chip sample, wafer substrate, or other sample with without detectable markers.</td>
+        <td>
+          The use of virtual reference points assigned to the region of interest
+          to be patterned on a bare chip sample, wafer substrate, or other
+          sample without detectable markers.
+        </td>
       </tr>
     </tbody>
   </table>
+
   <hr />
   <table>
     <thead>
@@ -97,7 +143,7 @@
               >
             </li>
             <li>
-              Then, install pip by entering the following command into local
+              Then, install pip by entering the following command into the local
               terminal:
               <pre><code>curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</code></pre>
             </li>
@@ -107,6 +153,7 @@
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -124,6 +171,7 @@
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -140,6 +188,7 @@
       </tr>
     </tbody>
   </table>
+
   <hr />
   <table>
     <thead>
@@ -153,13 +202,14 @@
           <ul>
             <li>Qiskit Metal</li>
             <li>2D CAD program</li>
-            <li>Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter)</li>
-            <li>Electron- & LASER-beam lithography software (GDS-to-GPF converter for equipment)</li>
+            <li>Pattern layout viewer &amp; editor (GDS-to-DXF/DXF-to-GDS converter)</li>
+            <li>Electron- &amp; LASER-beam lithography software (GDS-to-GPF converter for equipment)</li>
           </ul>
         </td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -170,7 +220,8 @@
     <tbody>
       <tr>
         <td>
-          <a href="https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP"
+          <a
+            href="https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&amp;tab=subscription&amp;plc=A360PP"
             >AutoCAD or AutoCAD Web</a
           >
         </td>
@@ -178,33 +229,34 @@
       </tr>
       <tr>
         <td><a href="https://qcad.org/en">QCAD</a></td>
-        <td>Open-sourced & simple</td>
+        <td>Open-sourced &amp; simple</td>
       </tr>
       <tr>
         <td><a href="https://librecad.org">LibreCAD</a></td>
-        <td>Open-sourced & feature-packed</td>
+        <td>Open-sourced &amp; feature-packed</td>
       </tr>
       <tr>
         <td><a href="https://www.freecad.org">FreeCAD</a></td>
-        <td>Open-sourced & feature-packed</td>
+        <td>Open-sourced &amp; feature-packed</td>
       </tr>
       <tr>
         <td><a href="https://www.salome-platform.org/?page_id=2430">Salome</a></td>
-        <td>Open-sourced & feature-packed</td>
+        <td>Open-sourced &amp; feature-packed</td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
-        <th>Pattern Layout Viewers & Editors:</th>
+        <th>Pattern Layout Viewers &amp; Editors:</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><a href="https://www.klayout.de/build.html">KLayout</a></td>
-        <td>Open-sourced & feature-packed</td>
+        <td>Open-sourced &amp; feature-packed</td>
       </tr>
       <tr>
         <td><a href="https://www.linkcad.com/download.php">LinkCAD</a></td>
@@ -220,6 +272,7 @@
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -241,6 +294,7 @@
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -253,6 +307,7 @@
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -268,6 +323,7 @@
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -276,34 +332,49 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://gdsfactory.github.io/gdsfactory/plugins_process.html">Gdsfactory</a></td>
+        <td>
+          <a href="https://gdsfactory.github.io/gdsfactory/plugins_process.html"
+            >Gdsfactory</a
+          >
+        </td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
-        <th>Electron- & LASER-Beam Lithography Software:</th>
+        <th>Electron- &amp; LASER-Beam Lithography Software:</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://www.genisys-gmbh.com/beamer.html">BEAMER (from GenIsys: usually purchased by your lab)</a></td>
+        <td>
+          <a href="https://www.genisys-gmbh.com/beamer.html"
+            >BEAMER (from GenIsys: usually purchased by your lab)</a
+          >
+        </td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
-        <th>Slides & Webinars for Using Electron-Beam Lithography Software:</th>
+        <th>Slides &amp; Webinars for Using Electron-Beam Lithography Software:</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://www.genisys-gmbh.com/webinar-series-beamer-training.html">GenIsys Webinars</a></td>
+        <td>
+          <a href="https://www.genisys-gmbh.com/webinar-series-beamer-training.html"
+            >GenIsys Webinars</a
+          >
+        </td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -315,10 +386,16 @@
         <td><a href="https://nano.yale.edu/book/export/html/213">Yale Nano</a></td>
       </tr>
       <tr>
-        <td><a href="https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography">KNI Caltech</a></td>
+        <td>
+          <a
+            href="https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography"
+            >KNI Caltech</a
+          >
+        </td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -330,13 +407,22 @@
         <td><a href="https://github.com/looninho/CUDAEBL">CUDAEBL</a></td>
       </tr>
       <tr>
-        <td><a href="https://github.com/pierremifasol/Lithography-Simulation">Lithography Simulation</a></td>
+        <td>
+          <a href="https://github.com/pierremifasol/Lithography-Simulation"
+            >Lithography Simulation</a
+          >
+        </td>
       </tr>
       <tr>
-        <td><a href="https://github.com/lani5677/Computational-lithography">Computational Lithography</a></td>
+        <td>
+          <a href="https://github.com/lani5677/Computational-lithography"
+            >Computational Lithography</a
+          >
+        </td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -345,13 +431,22 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223">Green Lithography 1</a></td>
+        <td>
+          <a href="https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223"
+            >Green Lithography 1</a
+          >
+        </td>
       </tr>
       <tr>
-        <td><a href="https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533">Green Lithography 2</a></td>
+        <td>
+          <a href="https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533"
+            >Green Lithography 2</a
+          >
+        </td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -360,13 +455,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534">Microresist</a></td>
+        <td>
+          <a
+            href="https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534"
+            >Microresist</a
+          >
+        </td>
       </tr>
       <tr>
-        <td><a href="https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html">EPFL Resist</a></td>
+        <td>
+          <a
+            href="https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html"
+            >EPFL Resist</a
+          >
+        </td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
@@ -375,14 +481,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://lab.kni.caltech.edu/Process_Recipe_Library">Process Recipe Library</a></td>
+        <td>
+          <a href="https://lab.kni.caltech.edu/Process_Recipe_Library"
+            >Process Recipe Library</a
+          >
+        </td>
       </tr>
     </tbody>
   </table>
+
   <table>
     <thead>
       <tr>
-        <th>List of Open-Source Process Development Kits & More (Optional):</th>
+        <th>List of Open-Source Process Development Kits &amp; More (Optional):</th>
       </tr>
     </thead>
     <tbody>
@@ -400,6 +511,7 @@
       </tr>
     </tbody>
   </table>
+
   <hr />
   <table>
     <thead>
@@ -409,19 +521,24 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="https://github.com/qiskit-community/qiskit-metal">Qiskit-Metal Page</a></td>
+        <td>
+          <a href="https://github.com/qiskit-community/qiskit-metal"
+            >Qiskit-Metal Page</a
+          >
+        </td>
       </tr>
     </tbody>
   </table>
   <hr />
+
   <h2>
-    To create the chip below, follow tutorials from the folder called "
-    <a
+    To create the chip below, follow tutorials from the folder called
+    "<a
       href="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/tree/main/Python%20Code_Qiskit%20Metal_Designs"
-      >Python Code_Qiskit Metal_Designs</a
-    >"
+      >Python Code_Qiskit Metal_Designs</a>"
   </h2>
   <hr />
+
   <p>
     <img
       src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/a8553658-9b1f-4c46-a6c2-fdcef7639d29"
@@ -529,27 +646,27 @@
 
     <!-- Substrate (SiO2) -->
     <rect x="0" y="180" width="400" height="20" fill="#d3d3d3" />
-    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000"
-      >SiO₂</text
-    >
+    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000">
+      SiO₂
+    </text>
 
     <!-- Bulk trilayer stack with seed layer -->
     <rect x="0" y="160" width="400" height="20" fill="#0e8381" />
     <rect x="0" y="140" width="400" height="20" fill="#1E90FF" />
     <rect x="0" y="120" width="400" height="20" fill="#FFA500" />
     <rect x="0" y="100" width="400" height="20" fill="#1E90FF" />
-    <text x="200" y="135" font-size="10" text-anchor="middle" fill="#FFFFFF"
-      >Bulk Trilayer</text
-    >
-    <text x="200" y="172" font-size="10" text-anchor="middle" fill="#FFFFFF"
-      >Seed Layer (BE)</text
-    >
+    <text x="200" y="135" font-size="10" text-anchor="middle" fill="#FFFFFF">
+      Bulk Trilayer
+    </text>
+    <text x="200" y="172" font-size="10" text-anchor="middle" fill="#FFFFFF">
+      Seed Layer (BE)
+    </text>
 
     <!-- Photoresist -->
     <rect x="50" y="80" width="300" height="20" fill="#FFB6C1" />
-    <text x="200" y="95" font-size="10" text-anchor="middle" fill="#000000"
-      >Photoresist</text
-    >
+    <text x="200" y="95" font-size="10" text-anchor="middle" fill="#000000">
+      Photoresist
+    </text>
 
     <!-- Step label -->
     <text
@@ -558,8 +675,9 @@
       font-size="12"
       text-anchor="middle"
       fill="#000000"
-      >Step 1: Preparation/ Bulk Device Footprint Lithography</text
     >
+      Step 1: Preparation/ Bulk Device Footprint Lithography
+    </text>
   </svg>
 
   <!-- Step 2 -->
@@ -569,34 +687,34 @@
 
     <!-- Substrate (SiO2) -->
     <rect x="0" y="180" width="400" height="20" fill="#d3d3d3" />
-    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000"
-      >SiO₂</text
-    >
+    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000">
+      SiO₂
+    </text>
 
     <!-- Bottom electrode / seed layer -->
     <rect x="50" y="160" width="300" height="20" fill="#0e8381" />
-    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#FFFFFF"
-      >Seed Layer (BE) </text
-    >
+    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#FFFFFF">
+      Seed Layer (BE)
+    </text>
 
     <!-- Etched-away region: show only middle portion from x=50..350 -->
     <rect x="50" y="140" width="300" height="20" fill="#1E90FF" />
     <rect x="50" y="120" width="300" height="20" fill="#FFA500" />
     <rect x="50" y="100" width="300" height="20" fill="#1E90FF" />
-    <text x="200" y="135" font-size="10" text-anchor="middle" fill="#FFFFFF"
-      >Trilayer (After Etch)</text
-    >
+    <text x="200" y="135" font-size="10" text-anchor="middle" fill="#FFFFFF">
+      Trilayer (After Etch)
+    </text>
 
     <!-- Photoresist on top (unchanged) -->
     <rect x="50" y="80" width="300" height="20" fill="#FFB6C1" />
-    <text x="200" y="95" font-size="10" text-anchor="middle" fill="#000000"
-      >Photoresist</text
-    >
+    <text x="200" y="95" font-size="10" text-anchor="middle" fill="#000000">
+      Photoresist
+    </text>
 
     <!-- Step label -->
-    <text x="200" y="20" font-size="12" text-anchor="middle" fill="#000000"
-      >Step 2: Ion Beam Etch</text
-    >
+    <text x="200" y="20" font-size="12" text-anchor="middle" fill="#000000">
+      Step 2: Ion Beam Etch
+    </text>
   </svg>
 
   <!-- Step 3 -->
@@ -606,28 +724,28 @@
 
     <!-- Substrate (SiO2) -->
     <rect x="0" y="180" width="400" height="20" fill="#d3d3d3" />
-    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000"
-      >SiO₂</text
-    >
+    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000">
+      SiO₂
+    </text>
 
     <!-- Bottom electrode / seed layer -->
     <rect x="50" y="160" width="300" height="20" fill="#0e8381" />
-    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#FFFFFF"
-      >Seed Layer (BE)</text
-    >
+    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#FFFFFF">
+      Seed Layer (BE)
+    </text>
 
     <!-- Trilayer stack (only in x=50..350) -->
     <rect x="50" y="140" width="300" height="20" fill="#1E90FF" />
     <rect x="50" y="120" width="300" height="20" fill="#FFA500" />
     <rect x="50" y="100" width="300" height="20" fill="#1E90FF" />
-    <text x="200" y="135" font-size="10" text-anchor="middle" fill="#FFFFFF"
-      >Trilayer (Exposed)</text
-    >
+    <text x="200" y="135" font-size="10" text-anchor="middle" fill="#FFFFFF">
+      Trilayer (Exposed)
+    </text>
 
     <!-- Step label -->
-    <text x="200" y="20" font-size="12" text-anchor="middle" fill="#000000"
-      >Step 3: Remove Photoresist</text
-    >
+    <text x="200" y="20" font-size="12" text-anchor="middle" fill="#000000">
+      Step 3: Remove Photoresist
+    </text>
   </svg>
 
   <!-- Step 4 -->
@@ -637,25 +755,25 @@
 
     <!-- Substrate (SiO2) -->
     <rect x="0" y="180" width="400" height="20" fill="#d3d3d3" />
-    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000"
-      >SiO₂</text
-    >
+    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000">
+      SiO₂
+    </text>
 
     <!-- Bottom electrode / seed layer -->
     <rect x="50" y="160" width="300" height="20" fill="#0e8381" />
-    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#FFFFFF"
-      >Seed Layer (BE)</text
-    >
+    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#FFFFFF">
+      Seed Layer (BE)
+    </text>
 
     <!-- Trilayer (still from x=50..350) -->
     <rect x="50" y="140" width="300" height="20" fill="#1E90FF" />
     <rect x="50" y="120" width="300" height="20" fill="#FFA500" />
     <rect x="50" y="100" width="300" height="20" fill="#1E90FF" />
-    <text x="200" y="135" font-size="10" text-anchor="middle" fill="#FFFFFF"
-      >Trilayer</text
-    >
+    <text x="200" y="135" font-size="10" text-anchor="middle" fill="#FFFFFF">
+      Trilayer
+    </text>
 
-    <!-- New photoresist stripes for 3 "pillars" -->
+    <!-- New photoresist stripes for 3 pillars -->
     <rect x="50" y="80" width="60" height="20" fill="#FFB6C1" />
     <rect x="170" y="80" width="60" height="20" fill="#FFB6C1" />
     <rect x="290" y="80" width="60" height="20" fill="#FFB6C1" />
@@ -677,17 +795,17 @@
 
     <!-- Substrate (SiO2) -->
     <rect x="0" y="180" width="400" height="20" fill="#d3d3d3" />
-    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000"
-      >SiO₂</text
-    >
+    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000">
+      SiO₂
+    </text>
 
     <!-- Bottom electrode / seed layer -->
     <rect x="50" y="160" width="300" height="20" fill="#0e8381" />
-    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#FFFFFF"
-      >Seed Layer (BE)</text
-    >
+    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#FFFFFF">
+      Seed Layer (BE)
+    </text>
 
-    <!-- Three "pillar"-looking structures remain -->
+    <!-- Three pillar-looking structures remain -->
     <rect x="50" y="140" width="60" height="20" fill="#1E90FF" />
     <rect x="50" y="120" width="60" height="20" fill="#FFA500" />
     <rect x="50" y="100" width="60" height="20" fill="#1E90FF" />
@@ -720,18 +838,18 @@
 
     <!-- Substrate (SiO2) -->
     <rect x="0" y="180" width="400" height="20" fill="#d3d3d3" />
-    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000"
-      >SiO₂ Substrate</text
-    >
+    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000">
+      SiO₂ Substrate
+    </text>
 
     <!-- Conformal SiO2 layer -->
     <rect x="0" y="60" width="400" height="100" fill="#8c8c8c" fill-opacity="0.3" />
 
     <!-- Bottom electrode / seed layer -->
     <rect x="50" y="160" width="300" height="20" fill="#0e8381" />
-    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#FFFFFF"
-      >Seed Layer (BE)</text
-    >
+    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#FFFFFF">
+      Seed Layer (BE)
+    </text>
 
     <!-- Pillars with PR on top -->
     <rect x="50" y="140" width="60" height="20" fill="#1E90FF" />
@@ -762,17 +880,17 @@
 
     <!-- Substrate (SiO2) -->
     <rect x="0" y="180" width="400" height="20" fill="#d3d3d3" />
-    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000"
-      >SiO₂ Substrate</text
-    >
+    <text x="200" y="195" font-size="10" text-anchor="middle" fill="#000000">
+      SiO₂ Substrate
+    </text>
 
     <!-- Bottom electrode / seed layer -->
     <rect x="50" y="160" width="300" height="20" fill="#0e8381" />
-    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#ffffff"
-      >Seed Layer (BE)</text
-    >
+    <text x="200" y="175" font-size="10" text-anchor="middle" fill="#ffffff">
+      Seed Layer (BE)
+    </text>
 
-    <!-- Three "pillars" now with top surfaces exposed -->
+    <!-- Three pillars now with top surfaces exposed -->
     <rect x="50" y="140" width="60" height="20" fill="#1E90FF" />
     <rect x="50" y="120" width="60" height="20" fill="#FFA500" />
     <rect x="50" y="100" width="60" height="20" fill="#1E90FF" />
@@ -895,7 +1013,7 @@
     <rect x="160" y="40" width="80" height="60" fill="#FFD700" />
     <rect x="280" y="40" width="90" height="60" fill="#FFD700" />
 
-    <!-- Blanket metal (Ti/Au) at the very top -->
+    <!-- Blanket metal (Ti/Au) at the top -->
     <rect x="0" y="0" width="400" height="40" fill="#FFD700" />
 
     <!-- Step label -->
