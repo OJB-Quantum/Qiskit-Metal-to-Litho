@@ -39,7 +39,7 @@ ________________________________________________________________________________
 | [Qiskit Metal + KLayout + Blender](https://youtu.be/NxArWX8WhPc?si=C-xPu6bjvJBSJs_t) |
 ________________________________________________________________________________________________________________________________
 
-| Required Software (Some Open-Source, Free Versions Are Linked Below): |
+| Required Software (Some Free, Open-Sourced Versions Are Linked Below): |
 | - |
 | Qiskit Metal |
 | 2D CAD program |
