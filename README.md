@@ -40,7 +40,7 @@ ________________________________________________________________________________
 
 ________________________________________________________________________________________________________________________________
 
-| Required Software (Some Open-Source, Free Versions Are Linked Below): |
+| Required Software (Some Free, Open-Sourced Versions Are Linked Below): |
 | - |
 | Qiskit Metal |
 | 2D CAD program |
