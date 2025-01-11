@@ -1,0 +1,5 @@
+title: Qiskit Metal to Litho
+description: On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip, performed via direct-write lithography. Depending on the resolution of desired quantum device features, LASER, scanning thermal probe, and electron-beam techniques are applicable options for patterning your design. - Onri Jay Benally 
+show_downloads: true
+google_analytics:
+theme: minima
