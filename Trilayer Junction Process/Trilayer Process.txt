@@ -4,6 +4,7 @@
 <!-- To render this technical document as an image, download the file and open it using a browser or upload the script to an SVG viewer -->
 
 <!-- Step 1: Initial lithography of the bulk device footprint -->
+<!-- Photoresist is applied on top of a pre-existing bulk trilayer stack that has been prepared for patterning -->
 <svg width="400" height="200" xmlns="http://www.w3.org/2000/svg" version="1.1">
   <!-- Background -->
   <rect x="0" y="0" width="400" height="200" fill="#bfbfbf" />
