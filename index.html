@@ -1,3 +1,390 @@
+I have retrieved the contents of both the `README.md` and `index.html` files. Here is the next step:
+
+### Step 1: Convert README.md to HTML
+
+I will now convert the markdown content to HTML. 
+
+### Step 2: Include the converted HTML content in the index.html file
+
+Once converted, I will insert the HTML content into the `index.html` file appropriately.
+
+Let's start with converting the markdown content to HTML.
+
+#### Converted HTML Content:
+```html
+<h1>Qiskit-Metal-to-Litho</h1>
+<p><a href="https://choosealicense.com/licenses/cc-by-4.0"><img src="https://img.shields.io/badge/Creative_Commons-License-green" alt="License"></a> <a href="https://mybinder.org/v2/gh/"><img src="https://mybinder.org/badge_logo.svg" alt="Binder"></a></p>
+<p><a href="https://doi.org/10.5281/zenodo.14621303"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.14621303.svg" alt="DOI"></a></p>
+<p>On the use of Qiskit Metal coded in Python to generate design files for building quantum devices on a chip, performed via direct-write lithography. Depending on the resolution of desired quantum devices and the available e-beam lithography systems, the design and fabrication process can vary.</p>
+<p>(Note: in the patterned 400-transmon example below, the ground contacts were excluded from layout as the design was to demonstrate process feasibility from Qiskit Metal design-to-real-chip. However, in practice, ground contacts are crucial for the functioning of the transmon qubits.)</p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/7c20c740-19f3-4a0e-b471-a6ab591f89c0" alt="20230616_081944"></p>
+<table>
+<thead>
+<tr>
+<th>It Is Important to Know That There Are 2 Main Types of Patterning With the E-Beam Writer (EBPG) Equipment:</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Marker-based using "rp" commands</td>
+<td>This is used if your sample has pre-existing markers patterned on it already [ex. sample WITH purposely-designed reference points that can be automatically located by the EBPG]</td>
+</tr>
+<tr>
+<td>Marker-free-based using "joyplus" commands</td>
+<td>This is used if your sample has no pre-existing referencing patterns [ex. bare substrate or other sample WITHOUT purposely-designed reference points]</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Terms To Be Aware Of:</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BEAMER</td>
+<td>Desktop software for importing GDSII or GDS files stored on WinSCP, beam step, size, and error correction (heal) paramters are set here and subsequently exported as GPF files that can be uploaded to the EBPG equipment.</td>
+</tr>
+<tr>
+<td>CJOB</td>
+<td>Software tool that is accessed on the EBPG equipment itself using the EBPG's terminal. From here, the GPF files can be uploaded and programmed with virtual alignment marker locations based on the design.</td>
+</tr>
+<tr>
+<td>Marker</td>
+<td>The use of reference points on a coordinate plane that are assigned to a pre-existing, detectable pattern on a chip sample. Detection is performed automatically by the lithography equipment.</td>
+</tr>
+<tr>
+<td>Marker-free</td>
+<td>The use of virtual reference points assigned to the region of interest to be patterned on a bare chip sample, wafer substrate, or other sample with without detectable markers.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>If You Need to Install pip Through Python, Follow These Steps:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><ul>
+<li>First, install an EXE file of Python from: <a href="https://www.python.org/downloads">https://www.python.org/downloads</a></li>
+<li>Then, install pip by entering the following command into local terminal: <pre><code>curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py</code></pre></li>
+<li>Now, pip is ready for use!</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Installation Steps for Qiskit Metal:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally">Installing Qiskit Metal Using Git+URL_by Onri Jay Benally</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Quantum Chip Rendering Steps:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://youtu.be/NxArWX8WhPc?si=C-xPu6bjvJBSJs_t">Qiskit Metal + KLayout + Blender</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Required Software (Some Free, Open-Sourced Versions Are Linked Below):</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><ul>
+<li>Qiskit Metal</li>
+<li>2D CAD program</li>
+<li>Pattern layout viewer & editor (GDS-to-DXF/DXF-to-GDS converter)</li>
+<li>Electron- & LASER-beam lithography software (GDS-to-GPF converter for equipment)</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>2D CAD Programs Available:</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP">AutoCAD or AutoCAD Web</a></td>
+<td>Cost effective alternative to locally-installed AutoCAD</td>
+</tr>
+<tr>
+<td><a href="https://qcad.org/en">QCAD</a></td>
+<td>Open-sourced & simple</td>
+</tr>
+<tr>
+<td><a href="https://librecad.org">LibreCAD</a></td>
+<td>Open-sourced & feature-packed</td>
+</tr>
+<tr>
+<td><a href="https://www.freecad.org">FreeCAD</a></td>
+<td>Open-sourced & feature-packed</td>
+</tr>
+<tr>
+<td><a href="https://www.salome-platform.org/?page_id=2430">Salome</a></td>
+<td>Open-sourced & feature-packed</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Pattern Layout Viewers & Editors:</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.klayout.de/build.html">KLayout</a></td>
+<td>Open-sourced & feature-packed</td>
+</tr>
+<tr>
+<td><a href="https://www.linkcad.com/download.php">LinkCAD</a></td>
+<td>Paid version: usually purchased by your lab</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ahryciw/Raith_GDSII">Raith_GDSII MATLAB Toolbox</a></td>
+<td>Public licensed</td>
+</tr>
+<tr>
+<td><a href="https://github.com/ulfgri/gdsii-toolbox">Octave/ MATLAB Toolbox for GDSII</a></td>
+<td>Public domain</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Free or Open-Source Software for Design, Analysis, or Large Data Visualization:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><ul>
+<li><a href="https://dev.opencascade.org/about/projects_and_products">Open Cascade</a></li>
+<li><a href="https://www.paraview.org/download">ParaView</a></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Open-Source Finite Element Method Software (Alternative to Ansys):</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/ElmerCSC/elmerfem">ElmerFEM</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Open-Source Mesh Generators (To Prepare Design for Use in Finite Element Method Software):</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://gmsh.info/#Download">Gmsh</a></td>
+</tr>
+<tr>
+<td><a href="https://www.salome-platform.org/?page_id=2430">Salome</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Open-Source Device Simulation Tools:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://gdsfactory.github.io/gdsfactory/plugins_process.html">Gdsfactory</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Electron- & LASER-Beam Lithography Software:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.genisys-gmbh.com/beamer.html">BEAMER (from GenIsys: usually purchased by your lab)</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Slides & Webinars for Using Electron-Beam Lithography Software:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.genisys-gmbh.com/webinar-series-beamer-training.html">GenIsys Webinars</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>General Overview of Electron-Beam Lithography:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://nano.yale.edu/book/export/html/213">Yale Nano</a></td>
+</tr>
+<tr>
+<td><a href="https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography">KNI Caltech</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Open-Source Computational Lithography Tools:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/looninho/CUDAEBL">CUDAEBL</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/pierremifasol/Lithography-Simulation">Lithography Simulation</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/lani5677/Computational-lithography">Computational Lithography</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Examples of Green [Sustainable] Lithography-Based Direct-Write Patterning:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223">Green Lithography 1</a></td>
+</tr>
+<tr>
+<td><a href="https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533">Green Lithography 2</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>List of Standard Negative/ Positive Tone Resist Materials:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534">Microresist</a></td>
+</tr>
+<tr>
+<td><a href="https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html">EPFL Resist</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>List of Available Process Recipes:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://lab.kni.caltech.edu/Process_Recipe_Library">Process Recipe Library</a></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>List of Open-Source Process Development Kits & More (Optional):</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://gdsfactory.github.io/ubc">SiEPIC Ebeam PDK</a></td>
+</tr>
+<tr>
+<td><a href="https://gdsfactory.github.io/skywater130">Skywater 130 PDK</a></td>
+</tr>
+<tr>
+<td><a href="https://gdsfactory.github.io/gf180">GlobalFoundries 180 PDK</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/gdsfactory/gdsfactory">Gdsfactory Library</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<table>
+<thead>
+<tr>
+<th>Some of the Code Used Here are Borrowed or Inspired From the Qiskit Metal Page:</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/qiskit-community/qiskit-metal">Qiskit-Metal Page</a></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>To create the chip below, follow tutorials from the folder called "<a href="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/tree/main/Python%20Code_Qiskit%20Metal_Designs">Python Code_Qiskit Metal_Designs</a>"</h2>
+<hr>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/a8553658-9b1f-4c46-a6c2-fdcef7639d29" alt="image"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/604e6ff1-006b-4aa5-a61d-2b3a3a65e7dc" alt="20230616_065853"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/6397d09e-f97a-4316-a753-73f5132e409e" alt="20230616_065902_c"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/ec7fb884-9080-4c12-8b05-b61de7151f7d" alt="249468107-5d549f3e-53bb-4b9d-8056-8a0564af98f9"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/a7396b69-4c91-47be-a736-327b168a9f14" alt="image"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/9c5d1fa1-79f4-4053-988c-373e1bdae512" alt="image"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/22c77ca7-1453-4e55-a6c3-bdca0a19cdd6" alt="image"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/438d5883-2c8e-4230-8fa8-9f43d0bec9b8" alt="image"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/136c6ce6-568a-4477-ad70-89df4ee516ab" alt="unnamed"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/8e46ee3b-b6c8-4299-ac25-240d0c12dc26" alt="unnamed"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/679f9a63-9e80-4596-aede-5fd9b0ab72ed" alt="image"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/93227874-124c-4736-802e-37d5e365dc7a" alt="unnamed"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/d2b6ae6b-03e3-4483-8e76-7ea20c6aeb34" alt="unnamed"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/6993c29a-9c02-4b7c-98f8-3cddacab0ee0" alt="unnamed"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/38c5a780-264f-42a7-8bd4-31179b3224ac" alt="image"></p>
+<p><img src="https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/dd72498d-2067-451c-bba7-dafe6165f292" alt="Fibonacci Word Fractal Lines_80 nm"></p>
+
+
 <!-- Below is a process flow for a trilayer junction fabrication procedure (trilayer process) designed by Onri Jay Benally -->
 <!-- If needed, the layers on either side of the middle pillar can be replaced with full metal vias rather than using the stack -->
 <!-- The explanation of the trilayer process is described after each step in the trilayer process below -->
