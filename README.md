@@ -88,10 +88,18 @@ ________________________________________________________________________________
 | - |
 | https://www.genisys-gmbh.com/webinar-series-beamer-training.html |
 
-| General Overview of Electron-Beam Lithography: |
+| General Overview of Electron-Beam Lithography + Highlights: |
 | - |
 | https://nano.yale.edu/book/export/html/213 |
 | https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography |
+| https://ebeam.mff.uw.edu/ebeamweb/doc/doc/overview.html |
+| https://ebeam.mff.uw.edu/ebeamweb/news/projects/index.html |
+| https://apps.mnc.umn.edu/archive/ebpgwiki/SOP.html |
+
+| List of Available Process Recipes: |
+| - |
+| https://lab.kni.caltech.edu/Process_Recipe_Library |
+| https://nano.yale.edu/manuals-documentation |
 
 | Open-Source Computational Lithography Tools: |
 | - |
@@ -108,10 +116,6 @@ ________________________________________________________________________________
 | - |
 | https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534 |
 | https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html |
-
-| List of Available Process Recipes: |
-| - |
-| https://lab.kni.caltech.edu/Process_Recipe_Library |
 
 | List of Open-Source Process Development Kits & More (Optional): |
 | - |
@@ -158,6 +162,5 @@ ________________________________________________________________________________
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/38c5a780-264f-42a7-8bd4-31179b3224ac)
 
 ![Fibonacci Word Fractal Lines_80 nm](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/dd72498d-2067-451c-bba7-dafe6165f292)
-
 
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/OJB_Quantum_System.gif)
