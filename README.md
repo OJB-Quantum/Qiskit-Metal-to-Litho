@@ -161,6 +161,10 @@ ________________________________________________________________________________
 
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/38c5a780-264f-42a7-8bd4-31179b3224ac)
 
+### Onri's Trilayer Tunnel Junction Process (Cross-Sectional View):
+
+![image](https://github.com/user-attachments/assets/18d406f4-337f-4468-bfc5-b1d0d262c064)
+
 ![Fibonacci Word Fractal Lines_80 nm](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/dd72498d-2067-451c-bba7-dafe6165f292)
 
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/OJB_Quantum_System.gif)
