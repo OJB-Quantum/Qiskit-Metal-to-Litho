@@ -22,22 +22,145 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | Marker | The use of reference points on a coordinate plane that are assigned to a pre-existing, detectable pattern on a chip sample. Detection is performed automatically by the lithography equipment using commands such as "rp20". |
 | Marker-free | The use of virtual reference points assigned to the region of interest to be patterned on a bare chip sample, wafer substrate, or other sample with without detectable markers. |
 
-________________________________________________________________________________________________________________________________
-| If You Need to Install pip Through Python, Follow These Steps: |
+---
+
+| If You Need to Install pip Through Python (Locally), Follow These Steps: |
 | - |
 | • First, install an EXE file of Python from: https://www.python.org/downloads |
 | • Then, install pip by entering the following command into local terminal: 
 ```curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py``` |
 | • Now, pip is ready for use! |
 
-| Installation Steps for Qiskit Metal: |
+| Local Installation Steps for Qiskit Metal: |
 | - |
 | [Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf) |
+
+### To Install and Run Qiskit Metal Fully in Google Colab, Run These 2 Code Cells Up Front
+
+#### This Will Clone the Official Qiskit Metal GitHub Repository into Google Colab on Any Browser
+
+```
+#@title Headless preflight (Qt off) + deps
+import os
+os.environ["QT_QPA_PLATFORM"] = "offscreen"
+os.environ["MPLBACKEND"] = "Agg"
+
+import matplotlib as mpl
+try:
+    mpl.use("Agg", force=True)
+except TypeError:
+    mpl.use("Agg")
+print("Matplotlib backend:", mpl.get_backend())
+
+# Scientific + GDS toolchain (incl. Descartes)
+!pip install "jedi>=0.16"
+%pip -q install --upgrade pip wheel setuptools
+%pip -q install "numpy>=1.24" "matplotlib>=3.8" \
+                "gdstk>=0.9.61" "shapely>=2.0" "ezdxf>=1.2.0" \
+                "pandas>=2.0" "scipy>=1.10" "networkx>=2.8" \
+                "pint>=0.20" "addict>=2.4.0" "pyyaml>=6.0.1" \
+                "qutip>=4.7" "h5py>=3.8" "descartes>=1.1" "jedi>=0.19.1"
+```
+
+```
+#@title Clone Metal; bind to /content/qiskit-metal; headless, layout-only init (Dict + is_component)
+# pylint: disable=invalid-name
+import os, sys, re, textwrap
+from pathlib import Path
+
+# Fresh clone
+!rm -rf /content/qiskit-metal
+!git clone --depth 1 https://github.com/qiskit-community/qiskit-metal /content/qiskit-metal
+
+root = Path("/content/qiskit-metal")
+pkg  = root / "qiskit_metal"
+assert pkg.exists(), f"Package folder missing: {pkg}"
+
+# Force Python to import FROM THIS FOLDER (no editable install)
+if str(root) not in sys.path:
+    sys.path.insert(0, str(root))
+os.environ["PYTHONPATH"] = str(root) + (":" + os.environ.get("PYTHONPATH",""))
+
+# --- Replace qiskit_metal/__init__.py with a minimal but compatible headless init ---
+orig_init = (pkg / "__init__.py").read_text(encoding="utf-8")
+(pkg / "__init__orig.py").write_text(orig_init, encoding="utf-8")
+
+minimal_init = textwrap.dedent("""
+    # [colab] Headless, layout-only __init__ (no GUI, no analyses), keep essentials.
+    import logging as _logging
+    try:
+        from addict import Dict as Dict
+    except Exception:
+        from .toolbox_python.attr_dict import Dict
+
+    logger = _logging.getLogger("qiskit_metal_colab")
+
+    class _Config:
+        @staticmethod
+        def is_building_docs():
+            return False
+    config = _Config()
+
+    def is_design(obj):
+        try:
+            from .designs.design_base import QDesign
+            return isinstance(obj, QDesign)
+        except Exception:
+            return False
+
+    def is_component(obj):
+        try:
+            from .qlibrary.core.base import QComponent
+            return isinstance(obj, QComponent)
+        except Exception:
+            return False
+
+    __all__ = ["Dict", "config", "logger", "is_design", "is_component"]
+""").strip()+"\n"
+(pkg / "__init__.py").write_text(minimal_init, encoding="utf-8")
+
+# --- Scrub ALL draw.mpl imports to avoid PySide2 at import time ---
+draw_init = pkg / "draw" / "__init__.py"
+if draw_init.exists():
+    d = draw_init.read_text(encoding="utf-8")
+    # Guard "from . import mpl"
+    d = re.sub(r'^\s*from\s+\.\s*import\s+mpl\s*$',
+               "try:\n    from . import mpl\n"
+               "except Exception as _e:\n"
+               "    print('[colab] draw.mpl disabled (headless):', _e)\n",
+               d, flags=re.MULTILINE)
+    # Guard "from .mpl import ..." and any other .mpl imports
+    d = re.sub(r'^\s*from\s+\.\s*mpl\s+import[^\n]*$',
+               "try:\n    from .mpl import render, figure_spawn\n"
+               "except Exception as _e:\n"
+               "    print('[colab] draw.mpl (named) disabled (headless):', _e)\n"
+               "    def render(*a, **k):\n"
+               "        raise RuntimeError('draw.mpl unavailable in headless mode')\n"
+               "    def figure_spawn(*a, **k):\n"
+               "        raise RuntimeError('draw.mpl unavailable in headless mode')\n",
+               d, flags=re.MULTILINE)
+    draw_init.write_text(d, encoding="utf-8")
+
+# Optional: ensure renderers package never drags Qt; keep explicit imports only
+rndr_init = pkg / "renderers" / "__init__.py"
+if rndr_init.exists():
+    (rndr_init.parent / "__init__orig.py").write_text(rndr_init.read_text(encoding="utf-8"), encoding="utf-8")
+    rndr_init.write_text("# [colab] minimal renderers package (explicit imports only; no Qt/MPL)\n__all__ = []\n",
+                         encoding="utf-8")
+
+# Verify: import the package *from this folder* and keep it light
+import importlib, sys as _sys
+importlib.invalidate_caches()
+import qiskit_metal
+print("qiskit_metal from:", qiskit_metal.__file__)
+assert qiskit_metal.__file__.startswith(str(pkg)), "Not importing from /content/qiskit-metal!"
+```
 
 | Quantum Chip Rendering Steps: |
 | - |
 | [Qiskit Metal + KLayout + Blender](https://youtu.be/NxArWX8WhPc?si=C-xPu6bjvJBSJs_t) |
-________________________________________________________________________________________________________________________________
+
+---
 
 | Required Software (Some Free, Open-Sourced Versions Are Linked Below): |
 | - |
@@ -123,13 +246,18 @@ ________________________________________________________________________________
 | Skywater 130 PDK: https://gdsfactory.github.io/skywater130 |
 | GlobalFoundries 180 PDK: https://gdsfactory.github.io/gf180 |
 | Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.]: https://github.com/gdsfactory/gdsfactory |
-_________________________________________________________________________________________________________________________________________________
+
+---
+
 | Some of the Code Used Here are Borrowed or Inspired From the Qiskit Metal Page: |
 | - |
 | https://github.com/qiskit-community/qiskit-metal |
-_________________________________________________________________________________________________________________________________________________
+
+---
+
 ## To create the chip below, follow tutorials from the folder called "[Python Code_Qiskit Metal_Designs](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/tree/main/Python%20Code_Qiskit%20Metal_Designs)" on main branch in this repository. Afterwards, proceed to a file called "[Transmon Chip Fabrication Process Flow](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Transmon%20Chip%20Fabrication%20Process%20Flow.pdf)", also on the main branch. (Optionally, click on both hyperlinks to find the tutorials).
-_________________________________________________________________________________________________________________________________________________
+
+---
 
 ![image](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/a8553658-9b1f-4c46-a6c2-fdcef7639d29)
 
