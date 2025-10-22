@@ -37,7 +37,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 
 ### To Install and Run Qiskit Metal Fully in Google Colab, Run These 2 Code Cells Up Front
 
-#### This Will Clone the Official Qiskit Metal GitHub Repository into Google Colab on Any Browser
+(This will clone the official Qiskit Metal GitHub repository into Google Colab on any browser)
 
 ```
 #@title Headless preflight (Qt off) + deps
