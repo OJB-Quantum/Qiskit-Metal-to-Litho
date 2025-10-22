@@ -35,7 +35,7 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | - |
 | [Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf) |
 
-### To Install and Run Qiskit Metal Fully in Google Colab, Run These 2 Code Cells Up Front
+### To Install and Run Qiskit Metal Fully in Google Colab, Run These 2 Code Cells Up Front (By Onri)
 
 (This will clone the official Qiskit Metal GitHub repository into Google Colab on any browser)
 
