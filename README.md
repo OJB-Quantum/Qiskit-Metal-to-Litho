@@ -35,12 +35,12 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | - |
 | [Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf) |
 
-### To Install and Run Qiskit Metal Fully in Google Colab, Run These 2 Code Cells Up Front (By Onri)
+### To Install and Run Qiskit Metal for Layout Generation Fully in Google Colab, Run These 2 Code Cells Up Front (By Onri)
 
 (This will clone the official Qiskit Metal GitHub repository into Google Colab on any browser)
 
 ```
-#@title Headless preflight (Qt off) + deps
+#@title Headless (Qt off) + dependencies
 import os
 os.environ["QT_QPA_PLATFORM"] = "offscreen"
 os.environ["MPLBACKEND"] = "Agg"
@@ -63,7 +63,7 @@ print("Matplotlib backend:", mpl.get_backend())
 ```
 
 ```
-#@title Clone Metal; bind to /content/qiskit-metal; headless, layout-only init (Dict + is_component)
+#@title Clone Qiskit Metal; bind to /content/qiskit-metal; headless, layout-only init (Dict + is_component)
 # pylint: disable=invalid-name
 import os, sys, re, textwrap
 from pathlib import Path
