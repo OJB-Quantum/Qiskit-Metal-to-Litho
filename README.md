@@ -172,18 +172,18 @@ assert qiskit_metal.__file__.startswith(str(pkg)), "Not importing from /content/
 
 | 2D CAD Programs Available: | Description |
 | - | - |
-| AutoCAD or AutoCAD Web | Cost effective alternative to locally-installed AutoCAD: <https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP> |
-| QCAD | Open-sourced & simple: <https://qcad.org/en> |
-| LibreCAD | Open-sourced & feature-packed: <https://librecad.org> |
-| FreeCAD | Open-sourced & feature-packed: <https://www.freecad.org> |
-| Salome | Open-sourced & feature-packed: <https://www.salome-platform.org/?page_id=2430> |
+| AutoCAD or AutoCAD Web | Cost effective alternative to locally-installed AutoCAD: <br> <https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP> |
+| QCAD | Open-sourced & simple: <br> <https://qcad.org/en> |
+| LibreCAD | Open-sourced & feature-packed: <br> <https://librecad.org> |
+| FreeCAD | Open-sourced & feature-packed: <br> <https://www.freecad.org> |
+| Salome | Open-sourced & feature-packed: <br> <https://www.salome-platform.org/?page_id=2430> |
 
 | Pattern Layout Viewers & Editors: | Description |
 | - | - |
-| KLayout | Open-sourced & feature-packed: <https://www.klayout.de/build.html> |
-| LinkCAD | Paid version: <https://www.linkcad.com/download.php> [usually purchased by your lab] |
-| Raith_GDSII MATLAB Toolbox | Public licensed: <https://github.com/ahryciw/Raith_GDSII> |
-| Octave/ MATLAB Toolbox for GDSII | Public domain: <https://github.com/ulfgri/gdsii-toolbox> |
+| KLayout | Open-sourced & feature-packed: <br> <https://www.klayout.de/build.html> |
+| LinkCAD | Paid version: <br> <https://www.linkcad.com/download.php> [usually purchased by your lab] |
+| Raith_GDSII MATLAB Toolbox | Public licensed <br> <https://github.com/ahryciw/Raith_GDSII> |
+| Octave/ MATLAB Toolbox for GDSII | Public domain: <br> <https://github.com/ulfgri/gdsii-toolbox> |
 
 | Free or Open-Source Software for Design, Analysis, or Large Data Visualization: |
 | - |
@@ -228,9 +228,9 @@ assert qiskit_metal.__file__.startswith(str(pkg)), "Not importing from /content/
 | Raith EBPG 5200 E-Beam Lithography System: <br> <https://lab.kni.caltech.edu/index.php/EBPG_5200:_100_kV_Electron_Beam_Lithography> |
 | Raith EBPG 5000+ E-Beam Lithography System: <br> <https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography> |
 
-| Documentation & Resources for a Common LASER Direct-Write Lithography Machines: |
+| Documentation & Resources for a Common LASER Direct-Write Lithography Machine: |
 | - |
-| DWL-66 Direct-Write Laser Lithography System: <br> <https://lab.kni.caltech.edu/DWL-66:_Direct-Write_Laser_System> |
+| Heidelberg DWL-66 Direct-Write Laser Lithography System: <br> <https://lab.kni.caltech.edu/DWL-66:_Direct-Write_Laser_System> |
 
 | List of Available Process Recipes: |
 | - |
