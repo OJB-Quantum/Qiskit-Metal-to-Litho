@@ -214,16 +214,23 @@ assert qiskit_metal.__file__.startswith(str(pkg)), "Not importing from /content/
 | General Overview of Electron-Beam Lithography + Highlights: |
 | - |
 | <https://nano.yale.edu/book/export/html/213> |
-| <https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography> |
 | <https://ebeam.mff.uw.edu/ebeamweb/doc/doc/overview.html> |
 | <https://ebeam.mff.uw.edu/ebeamweb/news/projects/index.html> |
 | <https://apps.mnc.umn.edu/archive/ebpgwiki/SOP.html> |
+| <https://nano.yale.edu/tips-and-tricks-ebeam-users> |
+| <https://nano.yale.edu/manuals-documentation> |
+| <https://ebeam.mff.uw.edu/ebeamweb/doc/doc/overview.html> |
 
-| Documentation & Resources for 3 Common Electron-Beam Lithography Machines |
+| Documentation & Resources for 4 Common Electron-Beam Lithography Machines: |
 | - |
-| Elionix ELS-7500EX E-Beam Lithography System: <https://wiki.nano.upenn.edu/wiki/index.php?title=Elionix_ELS-7500EX_E-Beam_Lithography_System> |
-| Raith EBPG5200+ E-Beam Lithography System: <https://wiki.nano.upenn.edu/wiki/index.php?title=Elionix_ELS-7500EX_E-Beam_Lithography_System> |
-| Raith EBPG 5200 E-Beam Lithography System: <https://lab.kni.caltech.edu/index.php/EBPG_5200:_100_kV_Electron_Beam_Lithography> |
+| Elionix ELS-7500EX E-Beam Lithography System: <br> <https://wiki.nano.upenn.edu/wiki/index.php?title=Elionix_ELS-7500EX_E-Beam_Lithography_System> |
+| Raith EBPG 5200+ E-Beam Lithography System: <br> <https://wiki.nano.upenn.edu/wiki/index.php?title=Elionix_ELS-7500EX_E-Beam_Lithography_System> | 
+| Raith EBPG 5200 E-Beam Lithography System: <br> <https://lab.kni.caltech.edu/index.php/EBPG_5200:_100_kV_Electron_Beam_Lithography> |
+| Raith EBPG 5000+ E-Beam Lithography System: <br> <https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography> |
+
+| Documentation & Resources for a Common LASER Direct-Write Lithography Machines: |
+| - |
+| DWL-66 Direct-Write Laser Lithography System: <br> <https://lab.kni.caltech.edu/DWL-66:_Direct-Write_Laser_System> |
 
 | List of Available Process Recipes: |
 | - |
