@@ -35,12 +35,12 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 | - |
 | [Installing Qiskit Metal Using Git+URL_by Onri Jay Benally](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/Installing%20Qiskit%20Metal%20Using%20Git%2BURL_by%20Onri%20Jay%20Benally.pdf) |
 
-### To Install and Run Qiskit Metal Fully in Google Colab, Run These 2 Code Cells Up Front (By Onri)
+### To Install and Run Qiskit Metal for Layout Generation Fully in Google Colab, Run These 2 Code Cells Up Front (By Onri)
 
 (This will clone the official Qiskit Metal GitHub repository into Google Colab on any browser)
 
 ```
-#@title Headless preflight (Qt off) + deps
+#@title Headless (Qt off) + dependencies
 import os
 os.environ["QT_QPA_PLATFORM"] = "offscreen"
 os.environ["MPLBACKEND"] = "Agg"
@@ -63,7 +63,7 @@ print("Matplotlib backend:", mpl.get_backend())
 ```
 
 ```
-#@title Clone Metal; bind to /content/qiskit-metal; headless, layout-only init (Dict + is_component)
+#@title Clone Qiskit Metal; bind to /content/qiskit-metal; headless, layout-only init (Dict + is_component)
 # pylint: disable=invalid-name
 import os, sys, re, textwrap
 from pathlib import Path
@@ -172,86 +172,99 @@ assert qiskit_metal.__file__.startswith(str(pkg)), "Not importing from /content/
 
 | 2D CAD Programs Available: | Description |
 | - | - |
-| AutoCAD or AutoCAD Web | Cost effective alternative to locally-installed AutoCAD: https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP |
-| QCAD | Open-sourced & simple: https://qcad.org/en |
-| LibreCAD | Open-sourced & feature-packed: https://librecad.org |
-| FreeCAD | Open-sourced & feature-packed: https://www.freecad.org |
-| Salome | Open-sourced & feature-packed: https://www.salome-platform.org/?page_id=2430 |
+| AutoCAD or AutoCAD Web | Cost effective alternative to locally-installed AutoCAD: <https://www.autodesk.com/products/autocad-web/overview?term=1-YEAR&tab=subscription&plc=A360PP> |
+| QCAD | Open-sourced & simple: <https://qcad.org/en> |
+| LibreCAD | Open-sourced & feature-packed: <https://librecad.org> |
+| FreeCAD | Open-sourced & feature-packed: <https://www.freecad.org> |
+| Salome | Open-sourced & feature-packed: <https://www.salome-platform.org/?page_id=2430> |
 
 | Pattern Layout Viewers & Editors: | Description |
 | - | - |
-| KLayout | Open-sourced & feature-packed: https://www.klayout.de/build.html |
-| LinkCAD | Paid version: https://www.linkcad.com/download.php [usually purchased by your lab] |
-| Raith_GDSII MATLAB Toolbox | Public licensed: https://github.com/ahryciw/Raith_GDSII |
-| Octave/ MATLAB Toolbox for GDSII | Public domain: https://github.com/ulfgri/gdsii-toolbox |
+| KLayout | Open-sourced & feature-packed: <https://www.klayout.de/build.html> |
+| LinkCAD | Paid version: <https://www.linkcad.com/download.php> [usually purchased by your lab] |
+| Raith_GDSII MATLAB Toolbox | Public licensed: <https://github.com/ahryciw/Raith_GDSII> |
+| Octave/ MATLAB Toolbox for GDSII | Public domain: <https://github.com/ulfgri/gdsii-toolbox> |
 
 | Free or Open-Source Software for Design, Analysis, or Large Data Visualization: |
 | - |
-| https://dev.opencascade.org/about/projects_and_products |
-| https://www.paraview.org/download |
+| <https://dev.opencascade.org/about/projects_and_products> |
+| <https://www.paraview.org/download> |
 
 | Open-Source Finite Element Method Software (Alternative to Ansys): |
 | - |
-| https://github.com/ElmerCSC/elmerfem |
+| <https://github.com/ElmerCSC/elmerfem> |
 
 | Open-Source Mesh Generators (To Prepare Design for Use in Finite Element Method Software): |
 | - |
-| https://gmsh.info/#Download |
-| https://www.salome-platform.org/?page_id=2430 |
+| <https://gmsh.info/#Download> |
+| <https://www.salome-platform.org/?page_id=2430> |
 
 | Open-Source Device Simulation Tools: |
 | - |
-| https://gdsfactory.github.io/gdsfactory/plugins_process.html |
+| <https://gdsfactory.github.io/gdsfactory/plugins_process.html> |
 
 | Electron- & LASER-Beam Lithography Software: |
 | - |
-| BEAMER (from GenIsys: https://www.genisys-gmbh.com/beamer.html [usually purchased by your lab]) |
+| BEAMER (from GenIsys: <https://www.genisys-gmbh.com/beamer.html> [usually purchased by your lab]) |
 
 | Slides & Webinars for Using Electron-Beam Lithography Software: |
 | - |
-| https://www.genisys-gmbh.com/webinar-series-beamer-training.html |
+| <https://www.genisys-gmbh.com/webinar-series-beamer-training.html> |
 
 | General Overview of Electron-Beam Lithography + Highlights: |
 | - |
-| https://nano.yale.edu/book/export/html/213 |
-| https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography |
-| https://ebeam.mff.uw.edu/ebeamweb/doc/doc/overview.html |
-| https://ebeam.mff.uw.edu/ebeamweb/news/projects/index.html |
-| https://apps.mnc.umn.edu/archive/ebpgwiki/SOP.html |
+| <https://nano.yale.edu/book/export/html/213> |
+| <https://ebeam.mff.uw.edu/ebeamweb/doc/doc/overview.html> |
+| <https://ebeam.mff.uw.edu/ebeamweb/news/projects/index.html> |
+| <https://apps.mnc.umn.edu/archive/ebpgwiki/SOP.html> |
+| <https://nano.yale.edu/tips-and-tricks-ebeam-users> |
+| <https://nano.yale.edu/manuals-documentation> |
+| <https://ebeam.mff.uw.edu/ebeamweb/doc/doc/overview.html> |
+
+| Documentation & Resources for 4 Common Electron-Beam Lithography Machines: |
+| - |
+| Elionix ELS-7500EX E-Beam Lithography System: <br> <https://wiki.nano.upenn.edu/wiki/index.php?title=Elionix_ELS-7500EX_E-Beam_Lithography_System> |
+| Raith EBPG 5200+ E-Beam Lithography System: <br> <https://wiki.nano.upenn.edu/wiki/index.php?title=Elionix_ELS-7500EX_E-Beam_Lithography_System> | 
+| Raith EBPG 5200 E-Beam Lithography System: <br> <https://lab.kni.caltech.edu/index.php/EBPG_5200:_100_kV_Electron_Beam_Lithography> |
+| Raith EBPG 5000+ E-Beam Lithography System: <br> <https://lab.kni.caltech.edu/EBPG_5000%2B:_100_kV_Electron_Beam_Lithography> |
+
+| Documentation & Resources for a Common LASER Direct-Write Lithography Machines: |
+| - |
+| DWL-66 Direct-Write Laser Lithography System: <br> <https://lab.kni.caltech.edu/DWL-66:_Direct-Write_Laser_System> |
 
 | List of Available Process Recipes: |
 | - |
-| https://lab.kni.caltech.edu/Process_Recipe_Library |
-| https://nano.yale.edu/manuals-documentation |
+| <https://lab.kni.caltech.edu/Process_Recipe_Library> |
+| <https://nano.yale.edu/manuals-documentation> |
 
 | Open-Source Computational Lithography Tools: |
 | - |
-| https://github.com/looninho/CUDAEBL |
-| https://github.com/pierremifasol/Lithography-Simulation |
-| https://github.com/lani5677/Computational-lithography |
+| <https://github.com/looninho/CUDAEBL> |
+| <https://github.com/pierremifasol/Lithography-Simulation> |
+| <https://github.com/lani5677/Computational-lithography> |
 
 | Examples of Green [Sustainable] Lithography-Based Direct-Write Patterning: |
 | - |
-| https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223 |
-| https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533 |
+| <https://onlinelibrary.wiley.com/doi/full/10.1002/admi.201601223> |
+| <https://onlinelibrary.wiley.com/doi/10.1002/adfm.202101533> |
 
 | List of Standard Negative/ Positive Tone Resist Materials: |
 | - |
-| https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534 |
-| https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html |
+| <https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534> |
+| <https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html> |
 
 | List of Open-Source Process Development Kits & More (Optional): |
 | - |
-| SiEPIC Ebeam PDK: https://gdsfactory.github.io/ubc |
-| Skywater 130 PDK: https://gdsfactory.github.io/skywater130 |
-| GlobalFoundries 180 PDK: https://gdsfactory.github.io/gf180 |
-| Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.]: https://github.com/gdsfactory/gdsfactory |
+| SiEPIC Ebeam PDK: <https://gdsfactory.github.io/ubc> |
+| Skywater 130 PDK: <https://gdsfactory.github.io/skywater130> |
+| GlobalFoundries 180 PDK: <https://gdsfactory.github.io/gf180> |
+| Python library to design chips [Photonics, Analog, Quantum, MEMs, etc.]: <https://github.com/gdsfactory/gdsfactory> |
 
 ---
 
 | Some of the Code Used Here are Borrowed or Inspired From the Qiskit Metal Page: |
 | - |
-| https://github.com/qiskit-community/qiskit-metal |
+| <https://github.com/qiskit-community/qiskit-metal> |
 
 ---
 
