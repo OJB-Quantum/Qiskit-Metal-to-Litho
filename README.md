@@ -251,7 +251,7 @@ assert qiskit_metal.__file__.startswith(str(pkg)), "Not importing from /content/
 
 | List of Standard Negative/ Positive Tone Resist Materials: |
 | - |
-| <https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534> |
+| <https://microresist.de/en/resists-and-photopolymers/> |
 | <https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html> |
 
 | List of Open-Source Process Development Kits & More (Optional): |
