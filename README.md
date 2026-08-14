@@ -8,6 +8,8 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 
 (Note: in the patterned 400-transmon example below, the ground contacts were excluded from layout as the design was to demonstrate process feasibility from Qiskit Metal design-to-real-chip. However, the main features are clearly visible under optical microscopy. Also, I included a DXF/GDS design output for a [full quantum chip](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/GDS%20Files/Full%20Chip%20Ex-001.GDS), ready for fabrication [electrodes, ground, and all], available to download in the file directories above).
 
+<img width="735" height="auto" alt="PXL_20260802_180318580" src="https://github.com/user-attachments/assets/c830acb5-01d2-47f4-a058-c48dee2218d9" />
+
 ![20230616_081944](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/7c20c740-19f3-4a0e-b471-a6ab591f89c0)
 
 | It Is Important to Know That There Are 2 Main Types of Patterning With the E-Beam Writer (EBPG) Equipment: | Description |
