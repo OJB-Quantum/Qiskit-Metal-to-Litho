@@ -8,6 +8,8 @@ On the use of Qiskit Metal coded in Python to generate design files for building
 
 (Note: in the patterned 400-transmon example below, the ground contacts were excluded from layout as the design was to demonstrate process feasibility from Qiskit Metal design-to-real-chip. However, the main features are clearly visible under optical microscopy. Also, I included a DXF/GDS design output for a [full quantum chip](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/blob/main/GDS%20Files/Full%20Chip%20Ex-001.GDS), ready for fabrication [electrodes, ground, and all], available to download in the file directories above).
 
+<img width="735" height="auto" alt="PXL_20260802_180318580" src="https://github.com/user-attachments/assets/c830acb5-01d2-47f4-a058-c48dee2218d9" />
+
 ![20230616_081944](https://github.com/OJB-Quantum/Qiskit-Metal-to-Litho/assets/88035770/7c20c740-19f3-4a0e-b471-a6ab591f89c0)
 
 | It Is Important to Know That There Are 2 Main Types of Patterning With the E-Beam Writer (EBPG) Equipment: | Description |
@@ -63,97 +65,190 @@ print("Matplotlib backend:", mpl.get_backend())
 ```
 
 ```
-#@title Clone Qiskit Metal; bind to /content/qiskit-metal; headless, layout-only init (Dict + is_component)
-# pylint: disable=invalid-name
-import os, sys, re, textwrap
+# @title Clone Qiskit Metal; Headless Setup
+"""Setup script for Qiskit Metal in a headless Google Colab environment.
+
+This script clones the Qiskit Metal repository, patches the initialization 
+files to remove GUI dependencies (PySide2), and configures the Python path.
+"""
+
+import logging
+import os
+import re
+import sys
+import textwrap
 from pathlib import Path
 
-# Fresh clone
-!rm -rf /content/qiskit-metal
-!git clone --depth 1 https://github.com/qiskit-community/qiskit-metal /content/qiskit-metal
+# Constants
+REPO_URL = "https://github.com/qiskit-community/qiskit-metal"
+ROOT_DIR = Path("/content/qiskit-metal")
+SRC_DIR = ROOT_DIR / "src"
+PKG_DIR = SRC_DIR / "qiskit_metal"
 
-root = Path("/content/qiskit-metal")
-pkg  = root / "qiskit_metal"
-assert pkg.exists(), f"Package folder missing: {pkg}"
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
-# Force Python to import FROM THIS FOLDER (no editable install)
-if str(root) not in sys.path:
-    sys.path.insert(0, str(root))
-os.environ["PYTHONPATH"] = str(root) + (":" + os.environ.get("PYTHONPATH",""))
 
-# --- Replace qiskit_metal/__init__.py with a minimal but compatible headless init ---
-orig_init = (pkg / "__init__.py").read_text(encoding="utf-8")
-(pkg / "__init__orig.py").write_text(orig_init, encoding="utf-8")
+def setup_repository():
+    """Clones the Qiskit Metal repository and verifies the structure.
 
-minimal_init = textwrap.dedent("""
-    # [colab] Headless, layout-only __init__ (no GUI, no analyses), keep essentials.
-    import logging as _logging
-    try:
-        from addict import Dict as Dict
-    except Exception:
-        from .toolbox_python.attr_dict import Dict
+    Returns:
+        Path: The path to the package directory.
 
-    logger = _logging.getLogger("qiskit_metal_colab")
+    Raises:
+        RuntimeError: If the package directory is not found after cloning.
+    """
+    logger.info("Cleaning old installation and cloning repository...")
+    !rm -rf {ROOT_DIR}
+    !git clone --depth 1 {REPO_URL} {ROOT_DIR}
 
-    class _Config:
-        @staticmethod
-        def is_building_docs():
-            return False
-    config = _Config()
+    if not PKG_DIR.exists():
+        logger.error("Package folder not found at %s", PKG_DIR)
+        if ROOT_DIR.exists():
+            logger.info("Root directory contents: %s", os.listdir(ROOT_DIR))
+        raise RuntimeError(
+            f"Git clone failed to provide the qiskit_metal package folder "
+            f"at {PKG_DIR}. The repo structure may have changed."
+        )
 
-    def is_design(obj):
+    return PKG_DIR
+
+
+def configure_python_path():
+    """Configures sys.path and PYTHONPATH to include the src directory."""
+    if str(SRC_DIR) not in sys.path:
+        sys.path.insert(0, str(SRC_DIR))
+    
+    current_pythonpath = os.environ.get("PYTHONPATH", "")
+    os.environ["PYTHONPATH"] = f"{SRC_DIR}:{current_pythonpath}"
+    logger.info("Python path configured to include %s", SRC_DIR)
+
+
+def patch_package_init():
+    """Replaces the package __init__.py with a minimal headless version."""
+    init_file = PKG_DIR / "__init__.py"
+    if not init_file.exists():
+        return
+
+    # Backup original
+    orig_init = init_file.read_text(encoding="utf-8")
+    (PKG_DIR / "__init__orig.py").write_text(orig_init, encoding="utf-8")
+
+    minimal_init = textwrap.dedent("""
+        # [colab] Headless, layout-only __init__
+        import logging as _logging
         try:
-            from .designs.design_base import QDesign
-            return isinstance(obj, QDesign)
+            from addict import Dict as Dict
         except Exception:
-            return False
+            try:
+                from .toolbox_python.attr_dict import Dict
+            except Exception:
+                class Dict(dict): pass
 
-    def is_component(obj):
-        try:
-            from .qlibrary.core.base import QComponent
-            return isinstance(obj, QComponent)
-        except Exception:
-            return False
+        logger = _logging.getLogger("qiskit_metal_colab")
 
-    __all__ = ["Dict", "config", "logger", "is_design", "is_component"]
-""").strip()+"\n"
-(pkg / "__init__.py").write_text(minimal_init, encoding="utf-8")
+        class _Config:
+            @staticmethod
+            def is_building_docs():
+                return False
+        config = _Config()
 
-# --- Scrub ALL draw.mpl imports to avoid PySide2 at import time ---
-draw_init = pkg / "draw" / "__init__.py"
-if draw_init.exists():
-    d = draw_init.read_text(encoding="utf-8")
+        def is_design(obj):
+            try:
+                from .designs.design_base import QDesign
+                return isinstance(obj, QDesign)
+            except Exception:
+                return False
+
+        def is_component(obj):
+            try:
+                from .qlibrary.core.base import QComponent
+                return isinstance(obj, QComponent)
+            except Exception:
+                return False
+
+        __all__ = ["Dict", "config", "logger", "is_design", "is_component"]
+    """).strip() + "\n"
+    
+    init_file.write_text(minimal_init, encoding="utf-8")
+    logger.info("Patched %s for headless mode.", init_file)
+
+
+def scrub_draw_imports():
+    """Removes PySide2/Qt dependencies from the draw module initialization."""
+    draw_init = PKG_DIR / "draw" / "__init__.py"
+    if not draw_init.exists():
+        return
+
+    content = draw_init.read_text(encoding="utf-8")
+
     # Guard "from . import mpl"
-    d = re.sub(r'^\s*from\s+\.\s*import\s+mpl\s*$',
-               "try:\n    from . import mpl\n"
-               "except Exception as _e:\n"
-               "    print('[colab] draw.mpl disabled (headless):', _e)\n",
-               d, flags=re.MULTILINE)
-    # Guard "from .mpl import ..." and any other .mpl imports
-    d = re.sub(r'^\s*from\s+\.\s*mpl\s+import[^\n]*$',
-               "try:\n    from .mpl import render, figure_spawn\n"
-               "except Exception as _e:\n"
-               "    print('[colab] draw.mpl (named) disabled (headless):', _e)\n"
-               "    def render(*a, **k):\n"
-               "        raise RuntimeError('draw.mpl unavailable in headless mode')\n"
-               "    def figure_spawn(*a, **k):\n"
-               "        raise RuntimeError('draw.mpl unavailable in headless mode')\n",
-               d, flags=re.MULTILINE)
-    draw_init.write_text(d, encoding="utf-8")
+    content = re.sub(
+        r'^\s*from\s+\.\s*import\s+mpl\s*$',
+        "try:\n    from . import mpl\n"
+        "except Exception as _e:\n"
+        "    print('[colab] draw.mpl disabled (headless):', _e)\n",
+        content,
+        flags=re.MULTILINE,
+    )
 
-# Optional: ensure renderers package never drags Qt; keep explicit imports only
-rndr_init = pkg / "renderers" / "__init__.py"
-if rndr_init.exists():
-    (rndr_init.parent / "__init__orig.py").write_text(rndr_init.read_text(encoding="utf-8"), encoding="utf-8")
-    rndr_init.write_text("# [colab] minimal renderers package (explicit imports only; no Qt/MPL)\n__all__ = []\n",
-                         encoding="utf-8")
+    # Guard "from .mpl import ..."
+    content = re.sub(
+        r'^\s*from\s+\.\s*mpl\s+import[^\n]*$',
+        "try:\n    from .mpl import render, figure_spawn\n"
+        "except Exception as _e:\n"
+        "    print('[colab] draw.mpl (named) disabled (headless):', _e)\n"
+        "    def render(*a, **k):\n"
+        "        raise RuntimeError('draw.mpl unavailable in headless mode')\n"
+        "    def figure_spawn(*a, **k):\n"
+        "        raise RuntimeError('draw.mpl unavailable in headless mode')\n",
+        content,
+        flags=re.MULTILINE,
+    )
+    
+    draw_init.write_text(content, encoding="utf-8")
+    logger.info("Scrubbed Qt imports from %s", draw_init)
 
-# Verify: import the package *from this folder* and keep it light
-import importlib, sys as _sys
-importlib.invalidate_caches()
-import qiskit_metal
-print("qiskit_metal from:", qiskit_metal.__file__)
-assert qiskit_metal.__file__.startswith(str(pkg)), "Not importing from /content/qiskit-metal!"
+
+def disable_renderers():
+    """Disables the renderers package to prevent Qt imports."""
+    rndr_init = PKG_DIR / "renderers" / "__init__.py"
+    if rndr_init.exists():
+        # Backup
+        (rndr_init.parent / "__init__orig.py").write_text(
+            rndr_init.read_text(encoding="utf-8"), encoding="utf-8"
+        )
+        # Override
+        rndr_init.write_text(
+            "# [colab] minimal renderers package\n__all__ = []\n",
+            encoding="utf-8",
+        )
+        logger.info("Disabled renderers package at %s", rndr_init)
+
+
+def main():
+    """Main execution flow for Qiskit Metal setup."""
+    try:
+        setup_repository()
+        configure_python_path()
+        patch_package_init()
+        scrub_draw_imports()
+        disable_renderers()
+
+        # Final Verification
+        import importlib
+        importlib.invalidate_caches()
+        
+        import qiskit_metal
+        print(f"Success! qiskit_metal imported from: {qiskit_metal.__file__}")
+
+    except Exception as e:
+        logger.error("Setup failed: %s", e)
+        raise
+
+
+if __name__ == "__main__":
+    main()
 ```
 
 | Quantum Chip Rendering Steps: |
@@ -220,6 +315,7 @@ assert qiskit_metal.__file__.startswith(str(pkg)), "Not importing from /content/
 | <https://nano.yale.edu/tips-and-tricks-ebeam-users> |
 | <https://nano.yale.edu/manuals-documentation> |
 | <https://ebeam.mff.uw.edu/ebeamweb/doc/doc/overview.html> |
+| <https://ntc.webs.upv.es/lithography> | 
 
 | Documentation & Resources for 4 Common Electron-Beam Lithography Machines: |
 | - |
@@ -250,7 +346,7 @@ assert qiskit_metal.__file__.startswith(str(pkg)), "Not importing from /content/
 
 | List of Standard Negative/ Positive Tone Resist Materials: |
 | - |
-| <https://www.microresist.de/en/products/?jet-smart-filters=jet-engine/products&_tax_query_pa_resist-alliance=534> |
+| <https://microresist.de/en/resists-and-photopolymers/> |
 | <https://www.epfl.ch/about/campus/neuchatel-en/daily-life/page-119059-en-html/page-126398-en-html> |
 
 | List of Open-Source Process Development Kits & More (Optional): |
